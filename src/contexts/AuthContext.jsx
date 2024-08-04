@@ -22,7 +22,7 @@ const userStorage = localStorage.getItem('@tripflow:user') //nao entendi o que c
 
     async function signIn({email, password}) {
 
-        console.log(email, password)
+        // console.log(email, password)
         // fetch('/users?') // é o mesmo que fetch('http://localhost:3000/users')
  const response = await api(`/users?email=${email}&senha=${password}`)
 const data = await response.json()  
