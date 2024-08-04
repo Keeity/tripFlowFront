@@ -5,7 +5,9 @@ import SignupPage from '../pages/Signup';
 import DashboardPage from '../pages/Dashboard';
 import SpotRegistrationPage from '../pages/SpotRegistration';
 import SpotsPage from '../pages/Spots';
-
+// Endpoints:
+// http://localhost:3000/usuarios
+// http://localhost:3000/spots
 
 function RoutesComponent() {
 
