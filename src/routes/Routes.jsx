@@ -26,11 +26,11 @@ function RoutesComponent() {
         <Routes>
             <Route path='/login' element={loginRedirect(<SigninPage/>)} />
             <Route path='/cadastro' element={loginRedirect(<SignupPage/>)} />
-            <Route path='/' Component={DashboardPage} />
-            <Route path='/painel' Component={DashboardPage} />
+            <Route path='/' element={loginRedirect(<DashboardPage/>)} />
+            <Route path='/dashboard' Component={DashboardPage} />
             <Route path='/locais' Component={SpotsPage} />
             <Route path='/local' Component={SpotRegistrationPage} />
-            <Route path='*' element={<Navigate replace to='/painel' />} />
+            <Route path='*' element={<Navigate replace to='/dashboard' />} />
             {/* {isAuthenticated ? (
               
             ) : (

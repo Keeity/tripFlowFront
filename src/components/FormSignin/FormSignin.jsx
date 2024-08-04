@@ -3,27 +3,29 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 // import { useAuth } from '../context/AuthContext.jsx'
 // import { apiLogin } from "../services/api.js"
+import { useForm } from "react-hook-form"
+import { useAuth } from '../../hooks/useAuth'
 
 
 function FormSignin() {
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  
+//   const [email, setEmail] = useState('')
+//   const [password, setPassword] = useState('')
+  const { register, handleSubmit } = useForm()
   const navigate = useNavigate()
+  const { signIn } = useAuth()
   
   // const { login } = useAuth()
 
-  const handleSubmit = async (event) => {
-      event.preventDefault()
+//   const handleSubmit = async (event) => {
+//       event.preventDefault()
 
+async function onSubmit(data) {
       try {
-          // const response = await apiLogin(username, password)
-          // if (response.success) {
-          //     login(response)
-          if (email === 'admin@admin.com' && password === 'admin123') {
-            // redireciona para algum lugar
-                navigate('/home')
+const isSucess = await signIn(data)
+if (isSucess) {
+        // redireciona para algum lugar
+                navigate('/painel')
           } else {
               alert('Usuário ou senha incorretos')
           }
@@ -35,10 +37,10 @@ function FormSignin() {
 
   return (
       <div className= 'formSignin'>
-          <form className='form' onSubmit={handleSubmit}>
-              <input placeholder="Email" type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
-              <input placeholder="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
-              <button type="submit">Entre</button>
+  <form className='form' onSubmit={handleSubmit(onSubmit)}>
+        <input placeholder="Email" type="text" {...register('email')} />
+        <input placeholder="Password" type="password" {...register('password')} />
+        <button type="submit">Entre</button>
           </form>
         
 
