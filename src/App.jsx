@@ -1,27 +1,24 @@
-// import { useAuth } from './context/AuthContext.jsx'
 
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import './App.css'
 import RoutesComponent from './routes/Routes'
-
+import { AuthProvider } from './contexts/AuthContext'
 
 
 function App() {
   // const { isAuthenticated } = useAuth()
-  const isAuthenticated = true;
+  // const isAuthenticated = true;
 
   return (
     <>
+  
+      <AuthProvider>
       <Router>
-           {isAuthenticated ? 
-        (
-          <RoutesComponent />
-        ) 
-        : (
-          <RoutesComponent />
-        )}
-      </Router>  
+        <RoutesComponent />
+      </Router>
+      </AuthProvider>
+
     </>
   )
 }
