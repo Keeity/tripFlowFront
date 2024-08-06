@@ -112,7 +112,7 @@ function CardSpots({ texto, imagem, pagelink}) {
                   <Link to={categoria.pagelink}>
           <div className="card-categoria-img">
             {" "}
-            <img src={categoria.imagem} alt={categoria.texto} />{" "}
+            <img className="imgcard" src={categoria.imagem} alt={categoria.texto} />{" "}
           </div>
           <div className="card-categoria-txt">
             {" "}

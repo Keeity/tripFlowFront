@@ -29,13 +29,27 @@ if (isSucess) {
   }
 
   return (
-      <div className= 'formSignin'>
-  <form className='form' onSubmit={handleSubmit(onSubmit)}>
-        <input placeholder="Email" type="text" {...register('email')} />
+      <div className= 'divSignin'>
+
+           <div className="imgh1signin">
+            
+   
+  
+           <h1 className='h1signin'>Entrar</h1>  
+
+                  <img
+            className="logotripflowformsignin"
+              src="/public/logotrip.png"
+
+           ></img>         
+            </div>     
+         <form className='formSignin' onSubmit={handleSubmit(onSubmit)}>
+    
+           <input placeholder="Email" type="text" {...register('email')} />
         <input placeholder="Password" type="password" {...register('password')} />
-        <button type="submit">Entre</button>
+        <button className="btnsignin" type="submit">Entre</button>
           </form>
-        
+    
 
       </div>
   )

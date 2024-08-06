@@ -1,7 +1,7 @@
 .formSignup{
     padding: 40px
 }
-
+/* 
 .form{
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     padding-right: 36px;
     row-gap: 20px;
 
-}
+} */
 
 .form-control {
     min-width: 290px;
