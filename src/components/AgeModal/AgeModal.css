@@ -1,22 +1,8 @@
-.modal{
-    /* //para deixar na frente */
+/*.modal{
+    /* //para deixar na frente 
     z-index: 1; 
-    min-width: 375.98px; */
-    /* width: 100%; */
-    /* position: absolute;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(230, 230, 230);
-    margin: auto; 
-    top: 33%;
-    left: 0;
-    right: 0;
-    border-radius: 16px;
-    padding: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 33%;
- width: 25%; */
+    min-width: 375.98px; 
+
   }
   
   .modal.open {
@@ -40,7 +26,7 @@
   }
   
   .modal-content {
-    /* Estilos para o conteúdo do modal (bordas, cores, etc.) */
+    /* Estilos para o conteúdo do modal (bordas, cores, etc.) 
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,0 +1,43 @@
+
+
+.imgh1Signup {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px ;
+padding-bottom: 20px;}
+
+.logotripflowformsignupp{
+  /* top: 20px; */
+  right: 40px;
+  padding-bottom: 80px;
+   height: 100px;
+ /* width: 500px; */
+}
+
+ 
+.imgSignup {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  align-items: flex-end;
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.h2imgSignup {
+  padding-top: 180px;
+  font-size: 2em;
+  text-align: end;
+  align-content: end;
+
+}

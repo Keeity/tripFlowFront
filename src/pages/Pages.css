@@ -4,51 +4,54 @@
   grid-template-areas: 
                         'formsignin imgsignin ';
   grid-template-columns: 65% 35%;
-  /* grid-template-rows: 70px 1fr 1fr 50px;   */
   height: 100vh;
-  /* background-image: url('/public/imgsignin.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
   background-image: url('/public/imgsignin.jpeg');
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
-  margin: 0;}
+  margin: 0;
+}
   
-/*   
-@media (max-width: 768px) {
-  .grid-signin {
-      grid-template-areas: 
-          'imgsignin'
-          'formsignin';
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
-  }
-} */
+
   .divsignin {
     grid-area: divsignin;  
-
   }
 
   .imgsignin {
     grid-area: imgsignin;
-    /* display: flex;
-    flex-direction: column;
-    align-content: center; */
+   
   }
 
-.signup {  
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 36px;
-    padding-right: 36px;
-    background-color: beige;
-    height: 100vw;
+
+
+  .grid-signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    background-image: url('1.jpg');
+    background-size: cover;
   }
+  
+ 
+
+ 
+  /* .grid-signup {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background-image: url('/public/isign.jpg');
+    background-size: cover;
+    height: 100vh; 
+}
+
+.FormSignup {
+    grid-column: 1 / 2;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box; }
+
+.ImgSignup {
+    grid-column: 2 / 3;
+} */
 
   nav{
     /* background-color: rgb(175, 195, 204); */
