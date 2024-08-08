@@ -15,9 +15,9 @@ align-items: center;
     display:block
 }
 
-img {
+/* img {
     position: relative
-}
+} */
 .form-control{
     max-width: 592px;
     width: 100%;

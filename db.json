@@ -1,7 +1,7 @@
 {
-    "users": [
+  "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "keeity Braga Collodel",
       "cpf": "05572822352",
       "gender": "feminino",
@@ -13,10 +13,10 @@
       "address": "Avenida Campeche, Campeche, Florianópolis, SC",
       "addressnumber": "104",
       "addressComplement": "apto 02",
-    "role": "admin"
+      "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Ana Silva",
       "cpf": "12345678901",
       "gender": "feminino",
@@ -28,10 +28,10 @@
       "address": "Rua das Palmeiras, Centro, Florianópolis, SC",
       "addressnumber": "200",
       "addressComplement": "casa",
-    "role": "premiumUser"
+      "role": "premiumUser"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Carlos Souza",
       "cpf": "23456789012",
       "gender": "masculino",
@@ -46,7 +46,7 @@
       "role": "user"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Beatriz Lima",
       "cpf": "34567890123",
       "gender": "feminino",
@@ -61,7 +61,7 @@
       "role": "user"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Daniel Martins",
       "cpf": "45678901234",
       "gender": "masculino",
@@ -76,7 +76,7 @@
       "role": "user"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Fernanda Alves",
       "cpf": "56789012345",
       "gender": "feminino",
@@ -91,7 +91,7 @@
       "role": "user"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Gabriel Oliveira",
       "cpf": "67890123456",
       "gender": "masculino",
@@ -106,7 +106,7 @@
       "role": "user"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Helena Costa",
       "cpf": "78901234567",
       "gender": "feminino",
@@ -121,7 +121,7 @@
       "role": "user"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Igor Santos",
       "cpf": "89012345678",
       "gender": "masculino",
@@ -136,11 +136,11 @@
       "role": "user"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Juliana Ferreira",
       "cpf": "90123456789",
       "gender": "feminino",
-      "birthDate": "07/09/1997",
+      "birthDate": "1997-09-07",
       "phone": "47996066927",
       "email": "juliana.ferreira@email.com",
       "password": "juliana123",
@@ -150,11 +150,11 @@
       "addressComplement": "casa",
       "role": "user"
     }
+   
   ],
-
   "spots": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Praia da Joaquina",
       "description": "Conhecida pelas suas dunas e ondas propícias para o surf, tendo uma infraestrutura boa para ficar com a família.",
       "visitDate": "15/01/2024",
@@ -173,7 +173,7 @@
       "user_id": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Lagoa da Conceição",
       "description": "Um dos pontos turísticos mais famosos de Florianópolis, ideal para esportes aquáticos e passeios de barco.",
       "visitDate": "20/02/2024",
@@ -192,14 +192,14 @@
       "user_id": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Mercado Público de Florianópolis",
       "description": "Um mercado histórico com uma variedade de lojas, restaurantes e eventos culturais.",
       "visitDate": "05/03/2024",
       "cep": "88010030",
       "address": "Rua Conselheiro Mafra, Centro, Florianópolis, SC",
       "Latitude": -27.5954,
-      "longitude": -48.5480,
+      "longitude": -48.548,
       "geoLocality": "https://www.google.com/maps/?q=-27.5954,-48.5480",
       "attractionCategory": "urbana",
       "visibility": "public",
@@ -211,7 +211,7 @@
       "user_id": 3
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Praia Mole",
       "description": "Uma praia popular entre os jovens e surfistas, conhecida por suas ondas fortes e areia macia.",
       "visitDate": "10/04/2024",
@@ -230,14 +230,14 @@
       "user_id": 4
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Fortaleza de São José da Ponta Grossa",
       "description": "Uma fortaleza histórica com vistas deslumbrantes e muita história para explorar.",
       "visitDate": "25/05/2024",
       "cep": "88053000",
       "address": "Rodovia SC-401, Florianópolis, SC",
-      "Latitude": -27.4260,
-      "longitude": -48.5000,
+      "Latitude": -27.426,
+      "longitude": -48.5,
       "geoLocality": "https://www.google.com/maps/?q=-27.4260,-48.5000",
       "attractionCategory": "urbana",
       "visibility": "public",
@@ -249,7 +249,7 @@
       "user_id": 5
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Praia do Campeche",
       "description": "Uma praia extensa e tranquila, ideal para caminhadas e relaxamento.",
       "visitDate": "30/06/2024",
@@ -268,14 +268,14 @@
       "user_id": 6
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Parque Municipal da Lagoa do Peri",
       "description": "Um parque natural com trilhas, áreas para piquenique e um lago para nadar.",
       "visitDate": "15/07/2024",
       "cep": "88066500",
       "address": "Rodovia Baldicero Filomeno, Armação, Florianópolis, SC",
-      "Latitude": -27.7390,
-      "longitude": -48.5210,
+      "Latitude": -27.739,
+      "longitude": -48.521,
       "geoLocality": "https://www.google.com/maps/?q=-27.7390,-48.5210",
       "attractionCategory": "natural",
       "visibility": "public",
@@ -287,7 +287,7 @@
       "user_id": 7
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Praia dos Ingleses",
       "description": "Uma praia popular com uma grande faixa de areia e muitas opções de restaurantes e bares.",
       "visitDate": "20/08/2024",
@@ -306,14 +306,14 @@
       "user_id": 8
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Praia da Armação",
       "description": "Uma praia tranquila e pitoresca, ideal para famílias e pescadores.",
       "visitDate": "05/09/2024",
       "cep": "88066500",
       "address": "Rua Hermes Guedes da Fonseca, Armação, Florianópolis, SC",
-      "Latitude": -27.7480,
-      "longitude": -48.4880,
+      "Latitude": -27.748,
+      "longitude": -48.488,
       "geoLocality": "https://www.google.com/maps/?q=-27.7480,-48.4880",
       "attractionCategory": "natural",
       "visibility": "public",
@@ -325,14 +325,14 @@
       "user_id": 9
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Praia do Santinho",
       "description": "Uma praia conhecida por suas trilhas e sítios arqueológicos, além de ser um ótimo local para surfar.",
       "visitDate": "20/10/2024",
       "cep": "88058000",
       "address": "Estrada Vereador Onildo Lemos, Santinho, Florianópolis, SC",
-      "Latitude": -27.4280,
-      "longitude": -48.3790,
+      "Latitude": -27.428,
+      "longitude": -48.379,
       "geoLocality": "https://www.google.com/maps/?q=-27.4280,-48.3790",
       "attractionCategory": "natural",
       "visibility": "public",
@@ -344,6 +344,4 @@
       "user_id": 10
     }
   ]
-
-
 }

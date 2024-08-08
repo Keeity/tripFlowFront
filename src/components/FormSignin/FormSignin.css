@@ -1,7 +1,12 @@
-.formSignin{
-    padding: 40px
+.divSignin{
+    padding: 40px;
+    background-color: rgb(238, 247, 210, 0.8);
+    margin:20px;
+    margin-right: 50px;
+    /* height: 40vw; */
+    border-radius: 10px;
 }
-.form{
+.formSignin{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -10,9 +15,114 @@
     padding-left: 36px;
     padding-right: 36px;
     row-gap: 20px;
+    
+}
+
+input{
+    min-height: 20PX;
+min-width: 200PX;
+}
+.imgh1signin{
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    row-gap: 20px;
+    max-height: fit-content;
+}
+
+.h1signin{
+color: #113241;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+padding: 10px;
+font-size: 45px;
+BOTTOM:8PX
+}
+
+.logotripflowformsignin{
+    top: 10px;
+   right: 5px;
+   width: 70px;
 
 }
 
+/* .logotripflowformsignup{
+    height: 140px;
+   width: 220px;
+  } */
+
+.btnsignin {
+    padding-left: 36px;
+    padding-right: 36px;
+    min-height: 40px;
+    margin: 20px;
+    min-width: 220px;
+    /* border: 2px solid #000;  */
+    /* Adiciona uma borda */
+    background-color: #184E77; /* Define a transparência inicial */
+    color:#eef7d2;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adiciona um efeito 3D */
+    transition: background-color 0.4s, transform 0.4s; /* Adiciona transições suaves */
+    cursor: pointer; /* Adiciona o ponteiro */
+}
+
+.btnsignin:hover {
+    background-color: rgba(14, 19, 16, 0.8); 
+    background-color: rgba(9, 93, 51, 0.8); 
+    /* Aumenta a opacidade ao passar o mouse */
+    transform: translateY(-1px); /* Adiciona um leve efeito de elevação */
+}
+.btnsignup {
+    padding-left: 36px;
+    padding-right: 36px;
+    min-height: 40px;
+    /* margin: 35px; */
+    min-width: 220px;
+    /* border: 2px solid #000;  */
+    /* Adiciona uma borda */
+    background-color: rgba(14, 19, 16, 0.8); 
+    /* background-color: rgba(9, 93, 51, 0.8);  */
+    color:#eef7d2;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adiciona um efeito 3D */
+    transition: background-color 0.4s, transform 0.4s; /* Adiciona transições suaves */
+    cursor: pointer; /* Adiciona o ponteiro */
+    width:fit-content
+}
+
+.btnsignup:hover {
+    background-color: rgba(9, 93, 51, 0.8);  
+
+    /* Aumenta a opacidade ao passar o mouse */
+    transform: translateY(-1px); /* Adiciona um leve efeito de elevação */
+}
+
+/* .pbtnsignup {
+    display:flex;
+    flex-direction: column;
+        align-content: center;
+    align-items: center;
+justify-content: center;
+
+} */
+.pSignup{
+    margin-top: 30px;
+    color: #113241;
+
+}
+/* .btnsignin{
+    padding-left: 36px;
+    padding-right: 36px;
+    min-height: 40PX;
+      margin: 35px;
+    min-width: 220px;
+
+   background-color: #1DB0C8
+} */
+/* 
 .form-control {
     min-width: 290px;
     width: fit-content;
@@ -20,7 +130,7 @@
 .label{
 padding: 30px;
 align-content:flex-start
-}
+} */
 
 /* .navSignin {
     display: flex;

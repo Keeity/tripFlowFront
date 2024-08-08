@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom"
 import FormSignup from "../components/FormSignup/FormSignup"
 import './Pages.css'
+import ImgSignup from "../components/ImgSignup/ImgSignup"
 
 function SignupPage() {
 
     return (
-        <div className= 'signup'>
-        <h1>Cadastro</h1>
+        <div className= 'grid-signup'>
+
+
         <FormSignup></FormSignup>
-        <nav>
-                <p>Você já tem cadastro?</p>
-                <Link  to= '/login'>Login</Link>
-            </nav>
+        <ImgSignup> </ImgSignup>
+          {/* <img className="logotripflowformsignup" src="/public/logotripflow.png" alt="Logo" /> */}
+
+
+    
         </div>
     )
 }

@@ -1,29 +1,57 @@
 
-.pageSignin {  
-    display: flex;
-    flex-direction: column;
-    /* align-content: center; */
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 36px;
-    padding-right: 36px;
+.grid-signin {
+  display: grid;
+  grid-template-areas: 
+                        'formsignin imgsignin ';
+  grid-template-columns: 65% 35%;
+  height: 100vh;
+  background-image: url('/public/imgsignin.jpeg');
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  margin: 0;
+}
+  
+
+  .divsignin {
+    grid-area: divsignin;  
+  }
+
+  .imgsignin {
+    grid-area: imgsignin;
+   
+  }
+
+
+
+  .grid-signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    background-image: url('1.jpg');
+    background-size: cover;
+  }
+  
+ 
+
+ 
+  /* .grid-signup {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background-image: url('/public/isign.jpg');
+    background-size: cover;
+    height: 100vh; 
+}
+
+.FormSignup {
+    grid-column: 1 / 2;
     background-color: white;
-    height: 100vw;
-    color: black;
-  }
-  
-  
-.signup {  
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 36px;
-    padding-right: 36px;
-    background-color: beige;
-    height: 100vw;
-  }
+    padding: 20px;
+    box-sizing: border-box; }
+
+.ImgSignup {
+    grid-column: 2 / 3;
+} */
 
   nav{
     /* background-color: rgb(175, 195, 204); */
@@ -31,27 +59,26 @@
     align-items: center;
   }
 
-  .grid-container {
+  .grid-dashboard {
     display: grid;
     grid-template-areas: 
                           'header header header'
                           'hero hero hero'
-                          'category category category'
-                          'footer footer footer';
+                          'category category category';
     grid-template-columns: 240px 1fr 1fr;
     grid-template-rows: 70px 1fr 1fr 50px;  
     height: 100vh;
   }
   
-  .footer {  
+  /* .footer {  
     grid-area: footer;  
     display: flex;
     align-items:last baseline;
     justify-content: center;
     padding-left: 36px;
     padding-right: 36px;
-    bottom:0px
-  }
+    bottom:0px */
+  /* } */
   .header {  
     grid-area: header;  
     /* display: flex;
