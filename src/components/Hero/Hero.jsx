@@ -1,13 +1,19 @@
 import "./Hero.css";
 
+// import Counter from "../Counter/Counter"
+
 function Hero() {
   return (
     <div className="hero">
       <div>
         <h1 className="h1hero">
           {" "}
-          Bebida rápida, gelada e no precinho? O Zé entrega tudo.
+  
+          {/* Bebida rápida, gelada e no precinho? O Zé entrega tudo. */}
+          {" "}
+
         </h1>
+ {/* <Counter></Counter> */}
         <form className="form">
           {/* <svg viewBox="0 0 24 24" className="css-19xyhl-FakeInput">
             <path
@@ -15,11 +21,11 @@ function Hero() {
               fill="#666"
             ></path>
           </svg> */}
-          <input
+          {/* <input
             className="form-control"
             placeholder=" Inserir endereço para ver preço"
             type="text"
-          ></input>
+          ></input> */}
         </form>
       </div>
     </div>
