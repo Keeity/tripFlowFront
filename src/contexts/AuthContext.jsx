@@ -19,29 +19,16 @@ const userStorage = localStorage.getItem('@tripflow:user') //nao entendi o que c
 
         return null
     })
-
-//     async function signIn({email, password}) {
-
-//         // console.log(email, password)
-//         // fetch('/users?') // é o mesmo que fetch('http://localhost:3000/users')
-//  const response = await api(`/users?email=${email}&senha=${password}`)
-// const data = await response.json()  
-
-//  if(data.length > 0) {
-//     const usuario = data[0]
-//     setUser(usuario)
-//     localStorage.setItem('@tripflow:user', JSON.stringify(usuario))
-// return true}
 async function signIn({email, password}) {
     try {
         const response = await api(`/users?email=${email}`);
         const data = await response.json();
         
-        // Verifique se há algum usuário com o e-mail fornecido
+        
         if (data.length > 0) {
             const usuario = data[0];
             
-            // Compare a senha fornecida com a senha armazenada
+            // Compara a senha fornecida com a senha armazenada
             if (usuario.password === password) {
                 setUser(usuario);
                 localStorage.setItem('@tripflow:user', JSON.stringify(usuario));
@@ -56,12 +43,7 @@ return false
 }
     
 
-    //     setUser(userResponse)
-    //     localStorage.setItem('@lab365:userLogged', JSON.stringify(userResponse))
-    //     localStorage.setItem('@lab365:token', Date.now())
-    // }
-
-    function signOut() {
+  function signOut() {
         setUser(null);
         localStorage.removeItem('@tripflow:user');
     }

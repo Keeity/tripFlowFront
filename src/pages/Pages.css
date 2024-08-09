@@ -1,123 +1,98 @@
-
 .grid-signin {
   display: grid;
-  grid-template-areas: 
-                        'formsignin imgsignin ';
+  grid-template-areas: "formsignin imgsignin ";
   grid-template-columns: 65% 35%;
   height: 100vh;
-  background-image: url('/public/imgsignin.jpeg');
+  background-image: url("/public/imgsignin.jpeg");
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
   margin: 0;
 }
-  
 
-  .divsignin {
-    grid-area: divsignin;  
-  }
-
-  .imgsignin {
-    grid-area: imgsignin;
-   
-  }
-
-
-
-  .grid-signup {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    background-image: url('1.jpg');
-    background-size: cover;
-  }
-  
- 
-
- 
-  /* .grid-signup {
-    display: grid;
-    grid-template-columns: 65% 35%;
-    background-image: url('/public/isign.jpg');
-    background-size: cover;
-    height: 100vh; 
+.divsignin {
+  grid-area: divsignin;
 }
 
-.FormSignup {
-    grid-column: 1 / 2;
-    background-color: white;
-    padding: 20px;
-    box-sizing: border-box; }
+.imgsignin {
+  grid-area: imgsignin;
+}
 
-.ImgSignup {
-    grid-column: 2 / 3;
-} */
+.grid-signup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  background-image: url("1.jpg");
+  background-size: cover;
+}
 
-  nav{
-    /* background-color: rgb(175, 195, 204); */
-    /* width: 100vw; */
-    align-items: center;
-  }
+nav {
+  /* background-color: rgb(175, 195, 204); */
+  /* width: 100vw; */
+  align-items: center;
+}
 
-  .grid-dashboard {
-    display: grid;
-    grid-template-areas: 
-                          'header header header'
-                          'hero hero hero'
-                          'category category category';
-    grid-template-columns: 240px 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr 50px;  
-    height: 100vh;
-  }
-  
-  /* .footer {  
-    grid-area: footer;  
-    display: flex;
-    align-items:last baseline;
-    justify-content: center;
-    padding-left: 36px;
-    padding-right: 36px;
-    bottom:0px */
-  /* } */
-  .header {  
-    grid-area: header;  
-    /* display: flex;
-    align-items:last baseline;
-    justify-content: end;
-    padding-left: 36px;
-    padding-right: 36px; */
-    list-style-type: none;
-    background-color: black;
-    color: white;
-    grid-area: header;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-left: 176px;
-    padding-right: 176px;
-    flex-direction: row;
-  }
-  
-  .hero {  
-    grid-area: hero;  
-    display: flex;
-    align-items: center;
-    padding: 14px 30px;  
-    /* height: 464px; */
-  }
+.grid-dashboard {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "category"
+    "map";
+  /* grid-template-columns: 170px 1fr; */
+  /* grid-template-rows: 70px 1fr 2fr;   */
+  grid-template-rows: 140px auto auto auto;
+  height: 100vh;
+  background-image: url("7.jpg");
+  background-position: center;
+  background-size: cover;
+  background-size: 120%;
+  background-attachment:fixed;
+  margin:0;
+  width: 100%;
+  height: 100%;
+}
 
-  .card-categorias{  
-    grid-area: category;  
+.map{
+  background-color:  #0d0c22;
+  grid-area: map;
+}
 
-  } 
-  
-  .grid-category {
-    grid-area: category;
-    display: grid;
-    grid-template-areas:
-      'category category category category category category category'
-      'category category category category category category category';
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    /* height: 100vh; */
-  }
+.Header {
+  grid-area: header;
+  margin-top: 30px;
+  list-style-type: none;
+  color: white;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 176px;
+  flex-direction: row;
+  width: 100%;
+  row-gap: 180px;
+  height: 95px;
+}
+
+.hero {
+  grid-area: hero;
+  display: flex;
+  align-items: center;
+  padding: 14px 30px;
+  /* height: 464px; */
+  width: 100%;
+  min-height: 180px;
+}
+
+.Grid-Category {
+  grid-area: category;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "category category category category category "
+    "category category category category category ";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+padding-left: 30px
+}

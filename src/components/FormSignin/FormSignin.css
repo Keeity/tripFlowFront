@@ -50,91 +50,45 @@ BOTTOM:8PX
 
 }
 
-/* .logotripflowformsignup{
-    height: 140px;
-   width: 220px;
-  } */
-
 .btnsignin {
     padding-left: 36px;
     padding-right: 36px;
     min-height: 40px;
     margin: 20px;
     min-width: 220px;
-    /* border: 2px solid #000;  */
-    /* Adiciona uma borda */
-    background-color: #184E77; /* Define a transparência inicial */
+    background-color: #184E77; 
     color:#eef7d2;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adiciona um efeito 3D */
-    transition: background-color 0.4s, transform 0.4s; /* Adiciona transições suaves */
-    cursor: pointer; /* Adiciona o ponteiro */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* efeito 3D */
+    transition: background-color 0.4s, transform 0.4s; 
+    cursor: pointer; 
 }
 
 .btnsignin:hover {
-    background-color: rgba(14, 19, 16, 0.8); 
+    /* background-color: rgba(14, 19, 16, 0.8);  */
     background-color: rgba(9, 93, 51, 0.8); 
-    /* Aumenta a opacidade ao passar o mouse */
-    transform: translateY(-1px); /* Adiciona um leve efeito de elevação */
+     transform: translateY(-1px); 
 }
 .btnsignup {
     padding-left: 36px;
     padding-right: 36px;
     min-height: 40px;
-    /* margin: 35px; */
     min-width: 220px;
-    /* border: 2px solid #000;  */
-    /* Adiciona uma borda */
     background-color: rgba(14, 19, 16, 0.8); 
-    /* background-color: rgba(9, 93, 51, 0.8);  */
-    color:#eef7d2;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adiciona um efeito 3D */
-    transition: background-color 0.4s, transform 0.4s; /* Adiciona transições suaves */
-    cursor: pointer; /* Adiciona o ponteiro */
+      color:#eef7d2;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.4s, transform 0.4s; 
+    cursor: pointer; 
     width:fit-content
 }
 
 .btnsignup:hover {
     background-color: rgba(9, 93, 51, 0.8);  
-
-    /* Aumenta a opacidade ao passar o mouse */
-    transform: translateY(-1px); /* Adiciona um leve efeito de elevação */
+    transform: translateY(-1px); 
 }
 
-/* .pbtnsignup {
-    display:flex;
-    flex-direction: column;
-        align-content: center;
-    align-items: center;
-justify-content: center;
 
-} */
 .pSignup{
     margin-top: 30px;
     color: #113241;
 
 }
-/* .btnsignin{
-    padding-left: 36px;
-    padding-right: 36px;
-    min-height: 40PX;
-      margin: 35px;
-    min-width: 220px;
-
-   background-color: #1DB0C8
-} */
-/* 
-.form-control {
-    min-width: 290px;
-    width: fit-content;
-}
-.label{
-padding: 30px;
-align-content:flex-start
-} */
-
-/* .navSignin {
-    display: flex;
-    flex-direction: column;
-align-content: center;
-width: 50px;
-} */
