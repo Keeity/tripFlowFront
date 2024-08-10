@@ -5,7 +5,7 @@ import Counter from "../Counter/Counter";
 import { useSpots } from '../../hooks/useSpots';
 import Map from "../Map/Map";
 
-function CardSpots({ onCardClick }) {
+function CardSpots() {
   const spots = useSpots();
 
 
@@ -14,7 +14,7 @@ function CardSpots({ onCardClick }) {
       <Counter></Counter>
       <div className="card-categorias">
         {spots.map((spot) => (
-          <div className="card-category" key={spot.id} onClick={() => onCardClick(spot)}>
+          <div className="card-category" key={spot.id} >
             <a href={`http://localhost:3000/spots/${spot.id}`} target="_blank" rel="noopener noreferrer">
               <div className="card-categoria-txt">
                 <span>{spot.name} </span>

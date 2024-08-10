@@ -149,8 +149,21 @@
       "addressnumber": "1000",
       "addressComplement": "casa",
       "role": "user"
+    },
+    {
+      "id": "4d20",
+      "name": "maickow braga",
+      "cpf": "05566789911",
+      "birthDate": "2024-08-15",
+      "phone": "47991145566",
+      "gender": "masculino",
+      "cep": "88134567",
+      "address": "Rua João Marcelino, Barra do Aririú, Palhoça/SC",
+      "addressNumber": "123",
+      "addressComplement": "casa",
+      "email": "maickow@email.com",
+      "password": "mqickow123"
     }
-   
   ],
   "spots": [
     {
@@ -350,7 +363,7 @@
       "visitDate": "30/10/2024",
       "cep": "88330000",
       "address": "Av. Atlântica, 6006 - Centro, Balneário Camboriú - SC",
-      "Latitude": -26.990,
+      "Latitude": -26.99,
       "longitude": -48.635,
       "geoLocality": "https://www.google.com/maps/?q=-26.9900,-48.6350",
       "attractionCategory": "cultural",
@@ -399,25 +412,6 @@
       "accessibility": true,
       "selectiveWasteCollection": true,
       "user_id": 17
-    },
-    {
-      "id": "18",
-      "name": "Gruta de Botuverá",
-      "description": "Uma impressionante formação geológica localizada em Botuverá.",
-      "visitDate": "05/11/2024",
-      "cep": "88370000",
-      "address": "SC-486, s/n - Zantão, Botuverá - SC",
-      "Latitude": -27.200,
-      "longitude": -49.068,
-      "geoLocality": "https://www.google.com/maps/?q=-27.2000,-49.0680",
-      "attractionCategory": "natural",
-      "visibility": "public",
-      "adventureLevel": "moderado",
-      "cost": "pago",
-      "rate": "8",
-      "accessibility": false,
-      "selectiveWasteCollection": true,
-      "user_id": 18
     }
   ]
 }

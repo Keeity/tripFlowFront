@@ -11,7 +11,7 @@
   grid-template-rows: repeat(2, 1fr); 
   gap: 15px; 
   padding: 15px;
-  background: rgba(238, 247, 210);
+  background: rgb(239, 243, 222);
   height:fit-content;
   border-radius: 5px;
   margin-left: 80px;
@@ -19,7 +19,7 @@
   color: rgb(13, 38, 57);
 }
 .card-category{
-    background-color:  rgb(13, 38, 57, 0.2);
+    background-color:  rgba(40, 57, 13, 0.2);
     min-width: 140px;
     height: 70px;
     display:flex;
@@ -33,7 +33,7 @@
 }
 .card-category:hover{
     background-color: rgb(13, 38, 57, 0.9);
-    color: rgb(246, 230, 214)
+    color:  rgb(244, 246, 234);
 }
 
 .card-categoria-txt {

@@ -5,8 +5,10 @@ const Map = () => {
   
   return (
   <div className="map">
-<p>Olá</p>
-  </div> 
+<p>Mapa</p>
+
+<img src="./mapa.jpg" alt="Mapa" />
+ </div> 
 )};
 
 export default Map;

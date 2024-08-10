@@ -4,7 +4,7 @@ import Hero from "../components/Hero/Hero";
 import "./Pages.css";
 import CardSpots from "../components/CardSpots/CardSpots";
 
-import Map from "../components/Map/Map";
+// import Map from "../components/Map/Map";
 
 function DashboardPage() {
   return (
