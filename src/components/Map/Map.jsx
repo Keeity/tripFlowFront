@@ -1,29 +1,12 @@
-import { Link, Navigate } from "react-router-dom";
-import "./Map.css";
-// import { useAuth } from "../../context/AuthContext"
 
-function Map() {
-  // const { logout } = useAuth()
+import './Map.css';
 
-  function handleLogout() {
-    //     logout()
-    // navigate('/login')
-    return <Navigate to="/login" replace />;
-  }
-
+const Map = () => {
+  
   return (
-    <div className="map">
-      <nav>
-        <Link to="/painel">Meu painel</Link>
-        <Link to="/produtos">rodutos</Link>
-        {/* <Link  to= '/cadastro'>Cadastro</Link> */}
-      </nav>
-
-      <button onClick={handleLogout} className="baseline-sidebar-text">
-        Logout
-      </button>
-    </div>
-  );
-}
+  <div className="map">
+<p>Olá</p>
+  </div> 
+)};
 
 export default Map;
