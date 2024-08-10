@@ -1,14 +1,12 @@
 .counter {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     align-items: flex-start;
-    /* gap:20px; */
-    font-size: 10px;
+    font-size: 7px;
     padding-bottom: 90px;
-    padding-top: 30px;
-    margin-left: 30px
-    /* background: rgba(238, 247, 210, 0.8); */
+    padding-top: 10px;
+    margin-left: 30px;
+    gap: 20px
 
 }
 
@@ -24,11 +22,11 @@ flex-direction: column;
         transition: background-color 0.3s ease;
       padding: 10px;
         margin: 10px;
-        margin-top: 40px;
+        margin-top: 20px;
 height: 70px;
 min-width: 70px;
-border-radius: 8px;
-background-color: rgb(13, 38, 57, 0.8)
+border-radius: 20px;
+background-color: rgb(13, 38, 57, 0.9)
 }
 
 
@@ -37,10 +35,10 @@ background-color: rgb(13, 38, 57, 0.8)
 color: #0E2C44
 } */
 
-.cardCounter --p{
-    color:  rgba(238, 247, 210, 0.8);
-    font-size: 15px;
-    /* font-weight: bold; */
+.cardCounter p{
+    color:  #82D5D4;
+    font-size: 25px;
+    font-weight: bold;
     margin: 0px;
     text-align: center;
 }

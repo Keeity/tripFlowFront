@@ -1,88 +1,44 @@
-.card-categoria {
-
+/* .card-categoria {
     display: flex;
     flex-direction: column;
     width: fit-content;    
-    align-items: center;
-    /* background-color: white; */
-    height: fit-content;
+    align-items: center    
+} */
 
-    
+.card-categorias {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 15px; 
+  padding: 15px;
+  background: rgb(239, 243, 222);
+  height:fit-content;
+  border-radius: 5px;
+  margin-left: 80px;
+  min-width: 850px;
+  color: rgb(13, 38, 57);
 }
-
 .card-category{
-    /* background-color: rgb(246, 230, 214, 0.8) */
-    background-color:  rgb(13, 38, 57, 0.2);
-    min-width: 120px;
+    background-color:  rgba(40, 57, 13, 0.2);
+    min-width: 140px;
+    height: 70px;
+    display:flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    justify-content: center;
+    /* padding-left: 12px;
+    padding-right: 10px;
+    border-radius: 8px; */
 }
 .card-category:hover{
-    background-color: rgb(13, 38, 57, 0.7);
-    color: rgb(246, 230, 214)
-}
-/* .Grid-Category:hover {
-    background: rgb(246, 230, 214, 0.8);
-  } */
-
-.card-categoria-img {
-    width: 155px;
-    height: 75px;
-       border-radius: 12px;
-    position: relative;
-    /* background-color: #0D2F00 */
-    
-}
-
-.imgcard {
-    position: absolute;
-    height: 70px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    background-color: rgb(13, 38, 57, 0.9);
+    color:  rgb(244, 246, 234);
 }
 
 .card-categoria-txt {
 font-size: small;
 text-align: center;
 padding-top: 10px;
-/* background-color: rgb(243, 246, 243); */
 }
 
-.card-categorias {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 25px; 
-    padding-bottom: 65px;
-    padding-top: 25px;
-    background: rgba(238, 247, 210);
-    
-    padding-right:20px;
-    border-radius: 5px;
-    padding-left: 20px;
-    margin-left: 80px;
-    min-width: 850px;
-    color: #0d0c22;  
-  }
-  
-  .card-categoria-p{
-    color: #0d0c22;  
-    padding-top: 20px;
-    font-size: 10px;
-    text-align: center;
-  }
-  .card-category {
-    /* Estilize os cards individuais aqui */
-
-    padding: 2px;
-    border-radius: 8px;
-    /* Outras propriedades de estilo conforme necessário */
-  }
-  
-/* "card-categoria">
-                <div className="card-categoria__bg">
-                    <img src={imagem}/>
-                </div>                
-                <span>{texto}</span>
-            </div>
-        </> */

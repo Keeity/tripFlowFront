@@ -34,6 +34,7 @@ try{
     } else {
     alert("Usuário cadastrado com sucesso!")
   reset(); //para limpar o formulário após enviar
+  navigate('/login');
   } 
 }catch (error) {
  alert("Houve um erro ao cadastrar o usuário") 
@@ -66,13 +67,13 @@ function handleSignin() {
      <form className="formSignup" onSubmit={handleSubmit(addUser)}>
      <div className="inputsdivSignup">
       <label>
-        Nome
+        Nome *
         <input className="inputSignup" placeholder="Digite seu nome completo" name="name" {...register('name', { required: 'Nome é obrigatório', validate: value => value.split(' ').length > 1 || 'Nome deve ter pelo menos duas palavras' })} />
         {errors.name && <p>{errors.name.message}</p>}
       </label>
     
       <label>
-        CPF
+        CPF *
         <input placeholder="Digite seu CPF"  name="cpf" {...register('cpf', { required: 'CPF é obrigatório', validate: value => value.length === 11 || value.length === 14 || 'CPF deve ter 11 ou 14 dígitos'  })} />
         {errors.cpf && <p>{errors.cpf.message}</p>}
       </label>
@@ -81,13 +82,13 @@ function handleSignin() {
       </div>
       <div className="inputsdivSignup">
        <label>
-        Data de Nascimento
+        Data de Nascimento *
         <input name="birthDate" type="date" {...register('birthDate', { required: 'Data de Nascimento é obrigatória' })} />
         {errors.birthDate && <p>{errors.birthDate.message}</p>}
       </label>
       <label>
-        Telefone
-        <input placeholder="Digite seu telefone com DDD" name="phone" {...register('phone')} />
+        Telefone *
+        <input placeholder="Digite seu telefone com DDD" name="phone" {...register('phone', { required: 'O telefone é obrigatório' })} />
         {errors.phone && <p>{errors.phone.message}</p>}
       </label>
       <label>
@@ -104,7 +105,7 @@ function handleSignin() {
      
       <div className="inputsdivSignup">
             <label>
-        CEP
+        CEP *
 
         <input placeholder="Digite seu CEP" name="cep" {...register('cep', { required: 'CEP é obrigatório', validate: async value => {
         if (value.length !== 8 && value.length !== 9) {
@@ -117,14 +118,14 @@ function handleSignin() {
       {errors.cep && <p>{errors.cep.message}</p>}
       </label>
           <label>
-         Endereço
+         Endereço *
           <input placeholder="Endereço" className="inputSignup" name="address" {...register('address', { required: 'Endereço é obrigatório' })} />
         {errors.address && <p>{errors.address.message}</p>}
       </label>
       </div>
       <div className="inputsdivSignup">
          <label>
-        Número
+        Número *
 
         <input placeholder="Digite o número" name="addressNumber" type="number" {...register('addressNumber', { required: 'Número é obrigatório' })} />
         {errors.addressNumber && <p>{errors.addressNumber.message}</p>}
@@ -138,13 +139,13 @@ function handleSignin() {
    </div>
    <div className="inputsdivSignup">
       <label>
-        Email
+        Email *
         <input  className="inputSignup2" placeholder="Digite seu email" name="email" type="email" {...register('email', { required: 'Email é obrigatório' })} />
         {errors.email && <p>{errors.email.message}</p>}
       </label>
 
       <label>
-        Senha
+        Senha *
         <input  className="inputSignup2" placeholder="Senha com pelo menos 8 dígitos" name="password" type="password" {...register('password', { required: 'Senha é obrigatória', minLength: { value: 8, message: 'Senha deve ter pelo menos 8 caracteres' } })} />
         {errors.password && <p>{errors.password.message}</p>}
       </label>

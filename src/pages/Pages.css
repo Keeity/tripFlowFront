@@ -27,9 +27,7 @@
 }
 
 nav {
-  /* background-color: rgb(175, 195, 204); */
-  /* width: 100vw; */
-  align-items: center;
+    align-items: center;
 }
 
 .grid-dashboard {
@@ -39,9 +37,7 @@ nav {
     "hero"
     "category"
     "map";
-  /* grid-template-columns: 170px 1fr; */
-  /* grid-template-rows: 70px 1fr 2fr;   */
-  grid-template-rows: 140px auto auto auto;
+  grid-template-rows: 140px auto auto 500px;
   height: 100vh;
   background-image: url("7.jpg");
   background-position: center;
@@ -54,34 +50,15 @@ nav {
 }
 
 .map{
-  background-color:  #0d0c22;
   grid-area: map;
 }
 
 .Header {
   grid-area: header;
-  margin-top: 30px;
-  list-style-type: none;
-  color: white;
-  grid-area: header;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 176px;
-  flex-direction: row;
-  width: 100%;
-  row-gap: 180px;
-  height: 95px;
-}
+ }
 
 .hero {
   grid-area: hero;
-  display: flex;
-  align-items: center;
-  padding: 14px 30px;
-  /* height: 464px; */
-  width: 100%;
-  min-height: 180px;
 }
 
 .Grid-Category {
@@ -89,10 +66,12 @@ nav {
   width: 100%;
   display: grid;
   grid-template-areas:
-    "category category category category category "
-    "category category category category category ";
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+    "counter category map";
+  grid-template-rows: 100px, auto, 100px;
+  margin:0;
+  overflow: hidden;
+}
 
-padding-left: 30px
+.counter{
+  grid-area: counter;
 }
