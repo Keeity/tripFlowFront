@@ -26,6 +26,7 @@
     justify-content: center;
     padding-left: 36px;
     padding-right: 36px;
+    padding-top: 12px;
     row-gap: 20px;
 }
 .logotripflowformsignup{
@@ -96,7 +97,9 @@ label {
 .h1Signup {
   font-size: 2.5em;
   color: #114a4f;
+  padding-left: 60px
 }
+
 
 
 .btns{

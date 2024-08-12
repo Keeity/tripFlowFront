@@ -1,19 +1,21 @@
-// import { Link } from "react-router-dom"
-import FormSignup from "../components/FormSignup/FormSignup"
-import './Pages.css'
-import ImgSpotRegistration from "../components/ImgSignup/ImgSignup"
+
+import Header from "../components/Header/Header";
+// import Hero from "../components/Hero/Hero";
+import "./Pages.css";
+import FormSpotRegistration from "../components/FormSpotRegistration/FormSpotRegistration";
+
 
 function SpotRegistrationPage() {
+  return (
+    <div className="grid-spotregistration">
 
-    return (
-        <div className= 'spotRegistratiom'>
-        <h1>Cadastro de Locais</h1>
-        <FormSignup></FormSignup>
-        <nav>
-    
-            </nav>
-        </div>
-    )
+      <Header />
+
+      {/* <Hero /> */}
+
+      <FormSpotRegistration />
+      </div>
+  );
 }
 
 export default SpotRegistrationPage

@@ -13,7 +13,7 @@ function ImgSignup() {
     {/* <img className="iSignup"   type="image/jpg"  src="/public/imgsignup2.jpg"
  
     ></img> */}
-      <img className="logotripflowformsignupp" src="/public/logotripflowe.png" alt="Logo" />
+      <img className="logotripflowformsignupp" src="/public/logotripflow.png" alt="Logo" />
     </div>
   );
 }
