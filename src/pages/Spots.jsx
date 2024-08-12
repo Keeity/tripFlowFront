@@ -3,18 +3,17 @@
 import Header from "../components/Header/Header"
 // import {useState, useEffect } from "react"
 import './Pages.css'
-import CardSpots from "../components/CardSpots/CardSpots";
+import ListSpots from "../components/CardSpots/CardSpots";
 
 function SpotsPage() {
    // fazer lógica para mostrar no primeiro carregamento
   
       return (
-          <div className='grid-container'>
-          {/* A sintaxe <Header /> é equivalente a chamar React.createElement(Header). Nao tem abertura porque nao precisa escrever nada dentro e nao tem*/}
+          <div className='grid-spots'>
           <Header />
         
       
-          <CardSpots />
+          <ListSpots />
       
  
         </div>

@@ -16,6 +16,19 @@
     gap: 20px;
     padding-top: 15px
   }
+
+  .pspotregistration{
+    /* padding-top: 10px; */
+padding-bottom: 20px;
+color:#5a5a5c;
+
+  }
+
+  .pspotregistration:hover{
+
+color:#050f68;
+text-decoration:underline
+  }
   .imgh1spotregistration{
   
       display: flex;
@@ -60,16 +73,48 @@
     color: #11153a;
     
 }
-  
+
+.geolocalizacao{
+  width:200px;
+  font-size:14px;
+  font-weight: bold;
+padding-left:20px;
+/* padding-bottom: 10px */
+}
 .textspotregistration{
-  min-width: 600px;
+  min-width: 820px;
   border-style: none;
-  min-height: 50px;
+  min-height: 40px;
+  padding-right: 20px;
 }
-.latlong{
+
+   
+.referencepoint {
+  width: 148px;
+}
+/* 
+.avaliacao {
+  min-width: 165px; */
+  /* margin-right: 120px */
+/* 
+} */
+.cepspotregistration{
+  width: 30px
+}
+/* .latlong{
   padding-top: 15px
+} */
+
+.formspotregistration input{
+  min-height: 20PX;
+min-width: 180PX;
 }
-  
+
+.formspotregistration select{
+  min-height: 20PX;
+min-width: 185PX;
+}
+
   .inputsdivspotregistration {
     display: grid;
     align-items: center;
@@ -77,7 +122,22 @@
     /* margin-bottom: 20px; */
     align-items: end;
         gap: 30px;
+  }
 
+  .inputsdivspotregistrationll {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+        gap: 120px;
+  }
+  .inputsdivspotregistrationlatlon {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: end;
+        gap: 20px;
+        Margin-top: 10px
   }
 
   label {
@@ -92,6 +152,13 @@
     min-width: 200px;
   }
 
+  .labeloption2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+  }
+
 
   .inputspotregistration, .inputspotregistration2, .textspotregistration, select {
     margin-top: 5px;
@@ -99,15 +166,12 @@
 
  
   .inputspotregistration2 {
-    min-width: 595px;
-  
-  }
-  
-   
-  .avaliacao {
-    min-width: 220px;
-  
-  }
+    width: 595px;
+    }
+    .inputspotregistration3 {
+      width: 375px;
+      }
+
   .inputspotregistration {
   
     /* border-radius: 5px;

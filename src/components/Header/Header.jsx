@@ -14,7 +14,7 @@ const Header = () => {
       <div className="logodash" />
         <nav>
           <Link to="/dashboard">Meus Locais</Link>
-          <Link to="/locals">Todos os Locais</Link>
+          <Link to="/locais">Todos os Locais</Link>
           <Link to="/local">Cadastrar Local</Link>
           <button onClick={signOut}><LogOut />Sair</button>
         </nav>

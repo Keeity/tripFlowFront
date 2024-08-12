@@ -1,6 +1,6 @@
 
 import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
+// import Hero from "../components/Hero/Hero";
 import "./Pages.css";
 import FormSpotRegistration from "../components/FormSpotRegistration/FormSpotRegistration";
 
