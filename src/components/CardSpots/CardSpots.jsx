@@ -4,7 +4,9 @@ import "./CardSpots.css";
 import Counter from "../Counter/Counter";
 import { useSpots } from '../../hooks/useSpots';
 import Map from "../Map/Map";
+import { Link } from "react-router-dom";
 
+Link
 function CardSpots() {
   const spots = useSpots();
 
@@ -15,11 +17,11 @@ function CardSpots() {
       <div className="card-categorias">
         {spots.map((spot) => (
           <div className="card-category" key={spot.id} >
-            <a href={`http://localhost:3000/spots/${spot.id}`} target="_blank" rel="noopener noreferrer">
+            <Link to={`/local/${spot.id}`}>
               <div className="card-categoria-txt">
                 <span>{spot.name} </span>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </div>

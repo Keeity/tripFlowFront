@@ -13,8 +13,8 @@ const Header = () => {
       {/* <img className="logodash" src="logotripflowe.png" alt="Logo" /> */}
       <div className="logodash" />
         <nav>
-          <Link to="/dashboard">Meus Locais</Link>
-          <Link to="/locais">Todos os Locais</Link>
+          <Link to="/dashboard">Dashboard: Todos os Locais</Link>
+          <Link to="/locais">Meus Locais</Link>
           <Link to="/local">Cadastrar Local</Link>
           <button onClick={signOut}><LogOut />Sair</button>
         </nav>

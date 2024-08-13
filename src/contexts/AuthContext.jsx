@@ -11,7 +11,7 @@ export const AuthContext = createContext({
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(() => {
     
-const userStorage = localStorage.getItem('@tripflow:user') //nao entendi o que colocar aqui
+const userStorage = localStorage.getItem('@tripflow:user') 
 
     if(userStorage) {
  return JSON.parse(userStorage)

@@ -3,16 +3,17 @@
 import Header from "../components/Header/Header"
 // import {useState, useEffect } from "react"
 import './Pages.css'
-import ListSpots from "../components/CardSpots/CardSpots";
+import ListSpots from "../components/ListSpots/ListSpots";
+
 
 function SpotsPage() {
    // fazer lógica para mostrar no primeiro carregamento
   
       return (
-          <div className='grid-spots'>
+          <div className='Grid-listspots'>
           <Header />
-        
-      
+        {/* <Hero/> */}
+
           <ListSpots />
       
  
