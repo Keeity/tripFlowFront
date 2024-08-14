@@ -1,7 +1,8 @@
-import { useSpots } from "../../hooks/useSpots";
-import "./SpotView.css";
+import React from 'react';
 import { useParams } from 'react-router-dom';
-
+import { useSpots } from '../../hooks/useSpots';
+import './SpotView.css';
+import MapSpotView from '../MapSpotView/MapSpotView';
 
 function SpotView() {
   const { id } = useParams();
@@ -11,32 +12,27 @@ function SpotView() {
   return spot ? (
     <div className="divspotview">
       <h1 className="h1spotview">{spot.name}</h1>
-      <p>{spot.description}</p>
       <div className="divspotview2">
-        <h2 className="h2spotview">Endereço:</h2>
-        <p>{spot.address}</p>
-        <p>CEP: {spot.cep}</p>
-        <p>Ponto de Referência: {spot.referencePoint}</p>
+        <p><strong>Descrição:</strong> {spot.description}</p>
+        <p><strong>Categoria de Atração:</strong> {spot.attractionCategory}</p>
+        <p><strong>Visibilidade:</strong> {spot.visibility}</p>
+        <p><strong>Nível de Aventura:</strong> {spot.adventureLevel}</p>
+        <p><strong>Custo:</strong> {spot.cost}</p>
+        <p><strong>Avaliação:</strong> {spot.rate}</p>
+        <p><strong>Acessibilidade:</strong> {spot.accessibility ? 'Sim' : 'Não'}</p>
+        <p><strong>Coleta Seletiva de Lixo:</strong> {spot.selectiveWasteCollection ? 'Sim' : 'Não'}</p>
+        <p><strong>Endereço:</strong> {spot.address}</p>
+        <p><strong>CEP:</strong> {spot.cep}</p>
+        <p><strong>Ponto de Referência:</strong> {spot.referencePoint}</p>
+        <p><strong>Latitude:</strong> {spot.latitude}</p>
+        <p><strong>Longitude:</strong> {spot.longitude}</p>
       </div>
-      <div className="divspotview2">
-        <h2 className="h2spotview">Localização Geográfica:</h2>
-        <p>Latitude: {spot.latitude}</p>
-        <p>Longitude: {spot.longitude}</p>
-        <a href={spot.geoLocality}>Ver no Google Maps</a>
-      </div>
-      <div className="divspotview2">
-        <h2 className="h2spotview">Detalhes:</h2>
-        <p>Categoria de Atração: {spot.attractionCategory}</p>
-        <p>Visibilidade: {spot.visibility}</p>
-        <p>Nível de Aventura: {spot.adventureLevel}</p>
-        <p>Custo: {spot.cost}</p>
-        <p>Avaliação: {spot.rate}</p>
-        <p>Acessibilidade: {spot.accessibility ? 'Sim' : 'Não'}</p>
-        <p>Coleta Seletiva de Lixo: {spot.selectiveWasteCollection ? 'Sim' : 'Não'}</p>
+      <div className="mapspotview">
+        <MapSpotView center={[spot.latitude, spot.longitude]} spots={[spot]} />
       </div>
     </div>
-  ) : (
-    <div>Carregando...</div>
+  ) : ( 
+    <div>Não encontrado...</div>
   );
 }
 

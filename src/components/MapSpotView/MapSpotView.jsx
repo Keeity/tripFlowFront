@@ -1,24 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { useSpots } from '../../hooks/useSpots';
-
 import 'leaflet/dist/leaflet.css';
-import './Map.css';
+import './MapSpotView.css';
 import { Link } from 'react-router-dom';
 
-const Map = () => {
-  const spots = useSpots();
-  const [center, setCenter] = useState([-27.5953, -48.5482]);
-
-  useEffect(() => {
-    if (spots.length > 0) {
-        setCenter([spots[0].latitude, spots[0].longitude]);
-    }
-  }, [spots]);
-
+const MapSpotView = ({ center, spots }) => {
   return (
-    <div className="map">
-      <MapContainer center={center} zoom={9} style={{ height: '100%', width: '100%' }}>
+    <div className="mapspotview">
+      <MapContainer center={center} zoom={12} style={{ height: '100%', width: '100%' }}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -28,7 +17,7 @@ const Map = () => {
             <Popup>
               <strong>{spot.name}</strong><br />
               {spot.description}
-              <div className="linkmap">
+              <div className="linkmapspotview">
                 <Link to={`/local/${spot.id}`}>Ver Detalhes</Link>
                 <a href={spot.geoLocality} target="_blank" rel="noopener noreferrer">Traçar rota no Maps</a>
               </div>
@@ -40,4 +29,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default MapSpotView;
