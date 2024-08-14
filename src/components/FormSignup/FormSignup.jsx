@@ -133,20 +133,20 @@ function handleSignin() {
 
       <label>
         Complemento
-        <input className="inputSignup2" placeholder="Complemento" name="addressComplement" {...register('addressComplement')} />
+        <input className="inputSignup" placeholder="Complemento" name="addressComplement" {...register('addressComplement')} />
         {errors.addressComplement && <p>{errors.addressComplement.message}</p>}
       </label>
    </div>
    <div className="inputsdivSignup">
       <label>
         Email *
-        <input  className="inputSignup2" placeholder="Digite seu email" name="email" type="email" {...register('email', { required: 'Email é obrigatório' })} />
+        <input  className="inputSignup3" placeholder="Digite seu email" name="email" type="email" {...register('email', { required: 'Email é obrigatório' })} />
         {errors.email && <p>{errors.email.message}</p>}
       </label>
 
       <label>
         Senha *
-        <input  className="inputSignup2" placeholder="Senha com pelo menos 8 dígitos" name="password" type="password" {...register('password', { required: 'Senha é obrigatória', minLength: { value: 8, message: 'Senha deve ter pelo menos 8 caracteres' } })} />
+        <input  className="inputSignup3" placeholder="Senha com pelo menos 8 dígitos" name="password" type="password" {...register('password', { required: 'Senha é obrigatória', minLength: { value: 8, message: 'Senha deve ter pelo menos 8 caracteres' } })} />
         {errors.password && <p>{errors.password.message}</p>}
       </label>
 

@@ -11,15 +11,18 @@
   grid-template-rows: repeat(2, 1fr); 
   gap: 15px; 
   padding: 15px;
-  background: rgb(239, 243, 222);
+  /* background: rgb(239, 243, 222); */
   height:fit-content;
   border-radius: 5px;
-  margin-left: 80px;
-  min-width: 850px;
+  /* margin-left: 80px; */
+  right: 10px;
+  margin-left: 25vw;
+  margin-top: 100px;
+width: 60vw;
   color: rgb(13, 38, 57);
 }
 .card-category{
-    background-color:  rgba(40, 57, 13, 0.2);
+    background-color:  rgb(219, 225, 212);
     min-width: 140px;
     height: 70px;
     display:flex;

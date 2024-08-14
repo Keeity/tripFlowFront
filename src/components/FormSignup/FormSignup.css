@@ -73,16 +73,22 @@ label {
       /* justify-items: end */
 }
 
+.inputsdivSignup select{
+width:115px
+}
 .inputSignup2 {
-  min-width: 270px;
+  min-width: 250px;
+}
 
+.inputSignup3 {
+width: 290px;
 }
 
 .inputSignup {
 
   /* border-radius: 5px;
   border: 1px solid #ddd; */
-  min-width: 370px;
+  min-width: 380px;
 }
 
 .Signup {
