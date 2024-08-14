@@ -13,7 +13,7 @@ function CardSpots() {
 
   return (
     <div className='Grid-Category'>
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
       <div className="card-categorias">
         {spots.map((spot) => (
           <div className="card-category" key={spot.id} >
@@ -25,7 +25,7 @@ function CardSpots() {
           </div>
         ))}
       </div>
-      <Map></Map>
+      {/* <Map></Map> */}
     </div>
   );
 }

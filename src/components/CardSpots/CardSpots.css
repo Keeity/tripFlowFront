@@ -14,8 +14,11 @@
   /* background: rgb(239, 243, 222); */
   height:fit-content;
   border-radius: 5px;
-  margin-left: 80px;
-  min-width: 850px;
+  /* margin-left: 80px; */
+  right: 10px;
+  margin-left: 25vw;
+  margin-top: 100px;
+width: 60vw;
   color: rgb(13, 38, 57);
 }
 .card-category{

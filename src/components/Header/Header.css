@@ -94,7 +94,9 @@ color: #0f3a5d;}
   font-size: 10px;
   margin: 4px 20px;
   cursor: pointer; 
+  border-radius: 3px;
   transition: background-color 0.3s ease; 
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .Header--navLeft button:hover {    background: rgb(135, 211, 208, 0.4);; 

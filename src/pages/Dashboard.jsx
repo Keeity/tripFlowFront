@@ -4,7 +4,8 @@ import Hero from "../components/Hero/Hero";
 import "./Pages.css";
 import CardSpots from "../components/CardSpots/CardSpots";
 
-// import Map from "../components/Map/Map";
+import Map from "../components/Map/Map";
+import Counter from "../components/Counter/Counter";
 
 function DashboardPage() {
   return (
@@ -13,9 +14,9 @@ function DashboardPage() {
       <Header />
 
       <Hero />
-
+<Counter />
       <CardSpots />
-      {/* <Map /> */}
+        <Map />
     </div>
   );
 }

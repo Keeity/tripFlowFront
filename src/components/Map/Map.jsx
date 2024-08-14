@@ -7,7 +7,7 @@ const Map = () => {
   <div className="map">
 <p>Mapa</p>
 
-<img src="./mapa.jpg" alt="Mapa" />
+{/* <img src="./mapa.jpg" alt="Mapa" /> */}
  </div> 
 )};
 

@@ -161,7 +161,7 @@
       "visibility": "private",
       "cost": "gratuito",
       "adventureLevel": "radical",
-      "accessibility": true,
+      "accessibility": "false",
       "selectiveWasteCollection": true,
       "user_id": "1",
       "cep": "88062400",
