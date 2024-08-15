@@ -1,7 +1,3 @@
-//acrescentar validações - nome com ao menos duas palavras. CPF com 11, cep com 8...
-// limpar formulário após usar...
-
-import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,7 +7,7 @@ import './FormSignup.css';
 function FormSignup() {
   const { register, handleSubmit, setValue, formState: { errors }, reset } = useForm();
   const navigate = useNavigate();
-  const [users, setUsers] = useState([]);
+
 
   async function addUser (data) {
 try{
@@ -33,7 +29,7 @@ try{
       alert("Erro ao cadastrar usuário")
     } else {
     alert("Usuário cadastrado com sucesso!")
-  reset(); //para limpar o formulário após enviar
+  reset(); 
   navigate('/login');
   } 
 }catch (error) {
@@ -113,7 +109,7 @@ function handleSignin() {
         }
         await getAddress(value);
         return true;
-        // onblur para acionar o preenchimento assim que sair do campo
+      
       }})} onBlur={async (e) => await getAddress(e.target.value)} />
       {errors.cep && <p>{errors.cep.message}</p>}
       </label>

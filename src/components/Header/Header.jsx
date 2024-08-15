@@ -10,15 +10,13 @@ const Header = () => {
   return (
     <header className="Header">
       <div className="Header--navLeft">
-      {/* <img className="logodash" src="logotripflowe.png" alt="Logo" /> */}
-      <div className="logodash" />
+       <div className="logodash" />
         <nav>
           <Link to="/dashboard">Dashboard: Todos os Locais</Link>
           <Link to="/locais">Meus Locais</Link>
           <Link to="/local">Cadastrar Local</Link>
           <button onClick={signOut}><LogOut />Sair</button>
         </nav>
-
       </div>
     </header>
   );

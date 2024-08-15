@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-// import { useAuth } from '../context/AuthContext.jsx';
 import SigninPage from '../pages/Signin';
 import SignupPage from '../pages/Signup';
 import DashboardPage from '../pages/Dashboard';
@@ -9,12 +8,9 @@ import SpotViewPage from '../pages/SpotView';
 import SpotsPage from '../pages/Spots';
 import PrivateRoute from './PrivateRoute';
 
-
 function RoutesComponent() {
 
-
     return (
-  
         <Routes>
         <Route path='/login' element={<SigninPage />} />
         <Route path='/cadastro' element={<SignupPage />} />

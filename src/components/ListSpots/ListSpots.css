@@ -4,48 +4,36 @@
 .listspots {
   display: flex;
   flex-direction: column;
-  gap: 35px; /* Espaço entre as linhas */
+  gap: 35px;
   padding: 15px;
   height: fit-content;
   border-radius: 5px;
   margin: 0 140px;
   min-width: 850px;
   color: rgb(13, 38, 57);
-  margin-top: 5%  
-  /* background: rgb(239, 243, 222); */
+  margin-top: 7% ;
 }
 .listspots h1{
   color: rgb(13, 38, 57);
-  background: rgb(239, 243, 222, 0.8);
-  padding: 0;
-  text-align: center;
-}
-.list-categorias {
-  /* display: flex; */
-  /* flex-direction: column; */
-  row-gap: 10px; 
-  /* background-color: transparent;  */
+  padding: 20PX 0PX 0PX 20PX;
+  text-align:initial;
+font-size: 35px;
+text-shadow: 3px 2px 1px rgb(193, 193, 198);
 }
 
-/* .list-category {
- 
-  padding: 10px;
-  border: 1px solid #ddd; 
-  border-radius: 8px; 
-  background-color: #f9f9f9; 
-} */
+TBODY{
+  background: rgb(239, 243, 222); 
+}
+.list-categorias {
+  row-gap: 10px; 
+}
+
 .list-category{
-  /* display: grid; */
-  /* grid-template-columns: repeat(6, 1fr); */
   gap: 10px; 
   background: rgb(239, 243, 222); 
-     /* background-color:  rgba(40, 57, 13, 0.2); */
-    /* min-width: 700px; */
     height: 50px;
     align-items: center;
     border-radius: 5px;
- /* padding-left: 18px;
-    padding-right: 18px; */
     border-radius: 8px; */
 }
 .list-category:hover{
@@ -61,7 +49,7 @@ text-align: center;
 
 .listspots th {
 color: white;
-background-color: rgb(13, 38, 57, 0.8);
+background-color: rgb(13, 38, 57, 0.9);
 height: 50px;
 font-size: 17px;
 
@@ -69,6 +57,8 @@ font-size: 17px;
 .list-category td {
   padding: 8px;
   border:none;
+  
+  
 
 }
 
@@ -96,5 +86,5 @@ font-size: 17px;
 } */
 
 .list-category button:hover {
-  color: #dc3545; /* Cor ao passar o mouse sobre o botão de apagar */
+  color: #dc3545;
 }

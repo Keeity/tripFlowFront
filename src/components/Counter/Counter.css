@@ -1,51 +1,40 @@
-
 .counter {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    align-content: center;
-    font-size: 8px;
-    padding-bottom: 20px;
-    padding-top: 115px;
-    margin-left: 45px;
-    gap: 55px;
-    position: fixed;
-    top: 100px;
-left: 5px;
-    
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 8px;
+  padding-bottom: 20px;
+  padding-top: 115px;
+  margin-left: 45px;
+  gap: 55px;
+  position: fixed;
+  top: 100px;
+  left: 5px;
 }
-.cardCounter{
-    display: flex;
-;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-    justify-content: space-between;
-        border: none;
-        background-color: transparent;
-        transition: background-color 0.3s ease;
-        padding: 12px 20px 12px 20px ;
-        margin: 10px;
-        margin-top: 20px;
-        gap: 40px;
-height: 20px;
-min-width: 110px;
-border-radius: 8px;
-background-color: rgba(72, 97, 116, 0.4);
-box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.6);
-
+.cardCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  padding: 12px 20px 12px 20px;
+  margin: 10px;
+  margin-top: 20px;
+  gap: 40px;
+  height: 20px;
+  min-width: 110px;
+  border-radius: 8px;
+  background-color: rgba(72, 97, 116, 0.4);
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-
-/* .cardCounter:hover {
-    background-color: rgba(238, 247, 210, 0.8);
-color: #0E2C44
-} */
-
-.cardCounter p{
-    color:  #82D5D4;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0px;
-    text-align: center;
+.cardCounter p {
+  color: #82d5d4;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px;
+  text-align: center;
 }
