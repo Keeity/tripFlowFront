@@ -15,7 +15,6 @@ function SpotView() {
       <div className="divspotview2">
         <p><strong>Descrição:</strong> {spot.description}</p>
         <p><strong>Categoria de Atração:</strong> {spot.attractionCategory}</p>
-        <p><strong>Visibilidade:</strong> {spot.visibility}</p>
         <p><strong>Nível de Aventura:</strong> {spot.adventureLevel}</p>
         <p><strong>Custo:</strong> {spot.cost}</p>
         <p><strong>Avaliação:</strong> {spot.rate}</p>

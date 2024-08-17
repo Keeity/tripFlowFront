@@ -1,236 +1,168 @@
-
-
-
 .divspotedit {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    align-items: baseline;
-    padding: 20px;
-    flex-wrap: wrap;
-    background-color: rgb(244, 246, 234, 0.8);
-    border-radius: 10px;
-    width: 60vw;
-    margin: 50px auto; 
-    gap: 20px;
-    padding-top: 15px
-  }
-
-  .pspotedit{
-    /* padding-top: 10px; */
-padding-bottom: 20px;
-color:#5a5a5c;
-
-  }
-
-  .pspotedit:hover{
-
-color:#050f68;
-text-decoration:underline
-  }
-  .imgh1spotedit{
-  
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      align-items: center;
-      justify-content: center;
-      padding-left: 36px;
-      padding-right: 36px;
-      row-gap: 20px;
-  }
-  .logotripflowformsignup{
-    top: 40px;
-    right: 40px;
-     height: 95px;
-   /* width: 500px; */
-  }
-  
-  .imgh1spotedit{
-  
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: center;  /* padding-left: 36px;
-    padding-right: 36px;
-    row-gap: 20px;
-   */
-  }
-  .formspotedit {
-    /* display: flex;
-    flex-direction: column;
-    align-items: first baseline; */
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    align-items: baseline;
-    justify-content: space-evenly;
-    padding: 20px 10px 20px 30px;
-    /* row-gap: 20px; */
-    width: 50vw;
-    color: #11153a;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 1.25rem;
+  flex-wrap: wrap;
+  background-color: rgb(244, 246, 234, 0.8);
+  border-radius: 10px;
+  width: 60vw;
+  margin: 3.1rem auto;
+  gap: 1.25rem;
+  padding-top: 0.94rem;
+  font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-.geolocalizacao{
-  width:200px;
-  font-size:14px;
+.pspotedit {
+  padding-bottom: 1.25rem;
+  color: #5a5a5c;
+}
+
+.pspotedit:hover {
+  color: #050f68;
+  text-decoration: underline;
+}
+.imgh1spotedit {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 36px 0px 36px;
+  row-gap: 1.25rem;
+}
+.h1spotedit{margin-left: 130px}
+
+.formspotedit {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 20px 10px 20px 30px;
+  width: 50vw;
+  color: #11153a;
+}
+
+.geolocalizacao {
+  width: 12.5rem;
+  font-size: 0.875rem;
+  padding-left: 1.25rem;
   font-weight: bold;
-padding-left:20px;
-/* padding-bottom: 10px */
 }
-.textspotedit{
-  min-width: 820px;
+.textspotedit {
+  min-width: 51.25rem;
+  min-height: 2.5rem;
   border-style: none;
-  min-height: 40px;
-  padding-right: 20px;
+  border-radius: 5px;
+  padding: 0.625rem 1.25rem 0.3125rem 0.625rem;
+  font-size: 0.8125rem;
+  font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-   
 .referencepoint {
-  width: 148px;
-}
-/* 
-.avaliacao {
-  min-width: 165px; */
-  /* margin-right: 120px */
-/* 
-} */
-.cepspotedit{
-  width: 30px
-}
-/* .latlong{
-  padding-top: 15px
-} */
-
-.formspotedit input{
-  min-height: 20PX;
-min-width: 180PX;
+  width: 9.25rem;
 }
 
-.formspotedit select{
-  min-height: 20PX;
-min-width: 185PX;
+.cepspotedit {
+  width: 1.875rem;
 }
 
-  .inputsdivspotedit {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr ;
-    /* margin-bottom: 20px; */
-    align-items: end;
-        gap: 30px;
-  }
+.formspotedit input {
+  min-height: 1.25rem;
+  min-width: 11.25rem;
+}
 
-  .inputsdivspoteditll {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: end;
-        gap: 120px;
-  }
-  .inputsdivspoteditlatlon {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: end;
-        gap: 20px;
-        Margin-top: 10px
-  }
+.formspotedit select {
+  min-height: 1.25rem;
+  min-width: 11.5625rem;
+}
 
-  label {
-        display: flex;
-    flex-direction: column;
-    padding: 0 10px 10px 0;}
+.inputsdivspotedit {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 30px;
+}
 
-  .labeloption {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    min-width: 200px;
-  }
+.inputsdivspoteditll {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  gap: 120px;
+}
+.inputsdivspoteditlatlon {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: end;
+  gap: 1.25rem;
+  margin-top: 0.625rem;
+}
 
-  .labeloption2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    min-width: 200px;
-  }
+label {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px 0;
+}
 
+.labeloption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  min-width: 12.5rem;
+}
 
-  .inputspotedit, .inputspotedit2, .textspotedit, select {
-    margin-top: 5px;
-  }
+.inputspotedit,
+.inputspotedit2,
+.textspotedit,
+select {
+  margin-top: 0.3125rem;
+}
 
- 
-  .inputspotedit2 {
-    width: 595px;
-    }
-    .inputspotedit3 {
-      width: 375px;
-      }
+.inputspotedit2 {
+  width: 37.1875rem;
+}
+.inputspotedit3 {
+  width: 23.4375rem;
+}
 
-  .inputspotedit {
-  
-    /* border-radius: 5px;
-    border: 1px solid #ddd; */
-    min-width: 370px;
-  }
-  
-  .spotedit {
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: #5cb85c;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .h1spotedit {
-      font-size: 2.5em;
-      color: #114a4f;
-      padding-left: 170px;
-      /* padding: 40px; */
-  }
-/*   
-  .btns{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    
-      } */
+.inputspotedit {
+  min-width: 23.125rem;
+}
 
-    .btnspotedit {
-        padding-left: 36px;
-        padding-right: 36px;
-        min-height: 40px;
-        margin-top: 35px;
-        background-color: #184E77; /* Define a transparência inicial */
-  
-        margin-right: 70px;
-        min-width: 300px;
-        /* border: 2px solid #000;  */
-        /* Adiciona uma borda */
-  
-        /* backg#eef7d2;round-color: rgba(9, 93, 51, 0.8);  */
-        color:rgb(244, 246, 234);;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adiciona um efeito 3D */
-        transition: background-color 0.4s, transform 0.4s; /* Adiciona transições suaves */
-        cursor: pointer; /* Adiciona o ponteiro */
-        width:fit-content
-    }
-    
-    .btnspotedit:hover {
-        background-color: rgba(9, 93, 51, 0.8);  
-    
-        /* Aumenta a opacidade ao passar o mouse */
-        transform: translateY(-1px); /* Adiciona um leve efeito de elevação */
-    }
+.spotedit {
+  padding: 0.625rem 1.25rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+}
 
-    
+.h1spotedit {
+  font-size: 2.5em;
+  color: #114a4f;
+  padding-left: 10.62rem;
+}
+.btnspotedit {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  min-height: 2.5rem;
+  margin-top: 2.1875rem;
+  margin-right: 4.375rem;
+  min-width: 18.75rem;
+  background-color: #184e77;
+  color: rgb(244, 246, 234);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s, transform 0.4s;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.btnspotedit:hover {
+  background-color: rgba(9, 93, 51, 0.8);
+  transform: translateY(-1px);
+}

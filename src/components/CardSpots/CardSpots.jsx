@@ -1,22 +1,17 @@
-/* eslint-disable react/prop-types */
 
 import "./CardSpots.css";
-import Counter from "../Counter/Counter";
-import { useSpots } from '../../hooks/useSpots';
-import Map from "../Map/Map";
+import { useSpots } from "../../hooks/useSpots";
 import { Link } from "react-router-dom";
 
-Link
+Link;
 function CardSpots() {
   const spots = useSpots();
 
-
   return (
-    <div className='Grid-Category'>
-      {/* <Counter></Counter> */}
+    <div className="Grid-Category">
       <div className="card-categorias">
         {spots.map((spot) => (
-          <div className="card-category" key={spot.id} >
+          <div className="card-category" key={spot.id}>
             <Link to={`/local/${spot.id}`}>
               <div className="card-categoria-txt">
                 <span>{spot.name} </span>
@@ -25,7 +20,6 @@ function CardSpots() {
           </div>
         ))}
       </div>
-      {/* <Map></Map> */}
     </div>
   );
 }

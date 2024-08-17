@@ -63,7 +63,6 @@ function FormSpotRegistration() {
       const data = await response.json();
       const fullAddress = `${data.logradouro}, ${data.bairro}, ${data.localidade}/${data.uf}`;
 
-      // Use a API de Geocodificação do Nominatim para obter a latitude e longitude
       const geoResponse = await fetch(
         `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(fullAddress)}`
       );
@@ -194,7 +193,6 @@ function FormSpotRegistration() {
          
         </div>
         <div className="inputsdivspotregistrationlatlon">
-          {/* <div className="labeloption"> */}
             <label>
               Nível de Aventura
               <select {...register("adventureLevel")}>
@@ -205,9 +203,6 @@ function FormSpotRegistration() {
               </select>
               {errors.adventureLevel && <p>{errors.adventureLevel.message}</p>}
             </label>
-          {/* </div> */}
-
-
 
           <div className="labeloption">
             <label>
@@ -284,17 +279,6 @@ function FormSpotRegistration() {
             </label>
           </div>
 
-          {/* <label>
-            Ponto de Referência
-            <input
-              className="referencepoint"
-              placeholder="Ponto de Referência"
-              {...register("referencePoint")}
-              onBlur={async (e) => {
-                console.log("onBlur triggered", e.target.value);
-                await getAddressFromRP(e.target.value);}}            />
-          </label> */}
-
           <div className="latlong">
             <label>
               Longitude *
@@ -328,9 +312,6 @@ function FormSpotRegistration() {
             </label>
           </div>
         </div>
-
-   
-
 
         <button className="btnspotregistration" type="submit">
           Cadastrar
