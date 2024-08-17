@@ -35,7 +35,7 @@ nav {
     "header header header"
     "counter counter counter"
     "map category category";
-  grid-template-rows: 140px 50px auto;
+    grid-template-rows: 8.75rem 3.125rem auto;
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1534008897995-27a23e859048?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: top;
@@ -79,7 +79,7 @@ nav {
     "header"
     "listspots";
   background-image: url("https://images.pexels.com/photos/127673/pexels-photo-127673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  grid-template-rows: 140px auto;
+  grid-template-rows: 8.75rem auto;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -98,7 +98,7 @@ nav {
     "header"
     "hero"
     "formspotregistration";
-  grid-template-rows: 140px auto;
+  grid-template-rows: 8.75rem auto;
   background-image: url("https://images.unsplash.com/photo-1588023708102-d578b324e5fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
@@ -117,7 +117,7 @@ nav {
     "header"
     "hero"
     "formspotedit";
-  grid-template-rows: 140px auto;
+  grid-template-rows: 8.75rem auto;
   background-image: url("https://images.unsplash.com/photo-1588023708102-d578b324e5fd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
@@ -135,7 +135,7 @@ nav {
   grid-template-areas:
     "header"
     "spotview";
-  grid-template-rows: 140px auto;
+  grid-template-rows: 8.75rem auto;
   background-image: url("https://images.unsplash.com/photo-1534008897995-27a23e859048?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-size: cover;
@@ -150,7 +150,7 @@ nav {
 }
 
 .logotripflowspotview {
-  height: 80px;
-  margin-top: 37px;
-  margin-left: 37px;
+  height: 5rem;
+  margin-top: 2.3125rem;
+  margin-left: 2.3125rem;
 }

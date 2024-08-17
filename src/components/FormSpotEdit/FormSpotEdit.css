@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding: 20px;
+  padding: 1.25rem;
   flex-wrap: wrap;
   background-color: rgb(244, 246, 234, 0.8);
   border-radius: 10px;
   width: 60vw;
-  margin: 50px auto;
-  gap: 20px;
-  padding-top: 15px;
+  margin: 3.1rem auto;
+  gap: 1.25rem;
+  padding-top: 0.94rem;
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .pspotedit {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   color: #5a5a5c;
 }
 
@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px 36px 0px 36px;
-  row-gap: 20px;
+  row-gap: 1.25rem;
 }
 .h1spotedit{margin-left: 130px}
 
@@ -45,37 +45,37 @@
 }
 
 .geolocalizacao {
-  width: 200px;
-  font-size: 14px;
+  width: 12.5rem;
+  font-size: 0.875rem;
+  padding-left: 1.25rem;
   font-weight: bold;
-  padding-left: 20px;
 }
 .textspotedit {
-  min-width: 820px;
+  min-width: 51.25rem;
+  min-height: 2.5rem;
   border-style: none;
-  min-height: 40px;
   border-radius: 5px;
-  padding: 10px 20px 5px 10px;
+  padding: 0.625rem 1.25rem 0.3125rem 0.625rem;
+  font-size: 0.8125rem;
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 13px;
 }
 
 .referencepoint {
-  width: 148px;
+  width: 9.25rem;
 }
 
 .cepspotedit {
-  width: 30px;
+  width: 1.875rem;
 }
 
 .formspotedit input {
-  min-height: 20px;
-  min-width: 180px;
+  min-height: 1.25rem;
+  min-width: 11.25rem;
 }
 
 .formspotedit select {
-  min-height: 20px;
-  min-width: 185px;
+  min-height: 1.25rem;
+  min-width: 11.5625rem;
 }
 
 .inputsdivspotedit {
@@ -98,8 +98,8 @@
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: end;
-  gap: 20px;
-  margin-top: 10px;
+  gap: 1.25rem;
+  margin-top: 0.625rem;
 }
 
 label {
@@ -111,30 +111,30 @@ label {
 .labeloption {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-width: 200px;
+  gap: 0.625rem;
+  min-width: 12.5rem;
 }
 
 .inputspotedit,
 .inputspotedit2,
 .textspotedit,
 select {
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 
 .inputspotedit2 {
-  width: 595px;
+  width: 37.1875rem;
 }
 .inputspotedit3 {
-  width: 375px;
+  width: 23.4375rem;
 }
 
 .inputspotedit {
-  min-width: 370px;
+  min-width: 23.125rem;
 }
 
 .spotedit {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border-radius: 5px;
   border: none;
   background-color: #5cb85c;
@@ -145,16 +145,16 @@ select {
 .h1spotedit {
   font-size: 2.5em;
   color: #114a4f;
-  padding-left: 170px;
+  padding-left: 10.62rem;
 }
 .btnspotedit {
-  padding-left: 36px;
-  padding-right: 36px;
-  min-height: 40px;
-  margin-top: 35px;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  min-height: 2.5rem;
+  margin-top: 2.1875rem;
+  margin-right: 4.375rem;
+  min-width: 18.75rem;
   background-color: #184e77;
-  margin-right: 70px;
-  min-width: 300px;
   color: rgb(244, 246, 234);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   transition: background-color 0.4s, transform 0.4s;
