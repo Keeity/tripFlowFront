@@ -72,7 +72,7 @@ Todos os inputs de formulário de cadastro foram usados de maneira correta, com 
 
    #### Rota para Listagem de locais: `/locais` - Página: SpotsPage
    Lista os "Meus Locais", ou seja, todos os locais cadastrados pelo usuário, havendo opção de editar, excluir ou visualizar detalhes do local cadastrado pelo usuário.
-![Trip Flow - projeto](./assets/images/meuslocais.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/cadastroUser.jpg)
 
 #### Rota para Cadastro de nova Atração Turística Privada: `/local - Página`: SpotRegistrationPage
  A aplicação inclui uma página para cadastrar e/ou editar locais de destino da viagem. Os usuários podem fornecer as informações necessárias para criar um novo local de destino ou editar um existente, desde que cadastrado por si.
