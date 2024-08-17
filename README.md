@@ -124,9 +124,11 @@ A pagina de login recebeu a implementação de responsividade para diferentes ta
 
   ### Para conseguir acessar como administrador(`admin`), utilizar para login uma das opções abaixo:
 
+#### Usuário admin Nicholas
    * email: `nicholas@email.com`
    *  password: `nicholas123`
 
+#### Usuário admin Keeity
    * email: `keeity@email.com`
    *  password: `keeity123`
 
@@ -138,6 +140,7 @@ Em breve, a ideia a ser implementada é integrar com o projeto de backend já cr
  
 De toda a forma, este é o MVP de uma plataforma que não apenas permite criação e busca de locais turísticos, mas que possibilita ao usuário já ter um roteiro de viagem completo, incluindo locais turísticos, hoteis, restaurantes, o mais personalizado possível.
 
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/ideia_final.jpg)
 
 ## Links da API
 
