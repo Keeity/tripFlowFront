@@ -58,33 +58,33 @@ O projeto foi estruturado para que os usuários, a depender do seu tipo de permi
 
    #### Rota para Login: `/login` - Página: SigninPage
    Inicia com uma página para login e, caso não tenha cadastro, direciona para a página de cadastro.
-![Trip Flow - projeto](./assets/images/login.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/login.jpg)
 
    #### Rota para Cadastro de usuário: `/cadastro` - Página: SignupPage
 A aplicação inclui uma página para cadastrar novos usuários, se já cadastrado, direciona ao login. Os usuários podem se cadastrar fornecendo as informações necessárias e, em seguida, fazer login para acessar a aplicação.
 
 Todos os inputs de formulário de cadastro foram usados de maneira correta, com validação para garantir que todos os campos obrigatórios fossem preenchidos, além de validações adicionais com HookForm.
-![Trip Flow - projeto](./assets/images/cadastroUser.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/cadastroUser.jpg)
 
    #### Rota para Dashboard: `/dashboard` - Página: DashboardPage
    página de Dashboard foi criada com cards para exibir as informações corretas. Ela fornece uma visão geral dos locais de viagem cadastrados, além de informar a quantidade de Usuário e Locais cadastrados, bem como mapa para visualização de todos os locais. 
-![Trip Flow - projeto](./assets/images/dashboard.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/dashboard.jpg)
 
    #### Rota para Listagem de locais: `/locais` - Página: SpotsPage
    Lista os "Meus Locais", ou seja, todos os locais cadastrados pelo usuário, havendo opção de editar, excluir ou visualizar detalhes do local cadastrado pelo usuário.
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/cadastroUser.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/meuslocais.jpg)
 
 #### Rota para Cadastro de nova Atração Turística Privada: `/local - Página`: SpotRegistrationPage
  A aplicação inclui uma página para cadastrar e/ou editar locais de destino da viagem. Os usuários podem fornecer as informações necessárias para criar um novo local de destino ou editar um existente, desde que cadastrado por si.
-  ![Trip Flow - projeto](./assets/images/localregistration.jpg)
+ ![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/localregistration.jpg)
 
 #### Rota para Visualização de atração específica cadastrada pelo próprio usuário: /local/:id - Página: SpotViewPage
 É usada para visualizar os detalhes de um local de destino específico, a partir da seleção no dashboard ou mesmo nos locais (Meus locais). Semelhante à rota de edição, o ID do local de destino é passado como um parâmetro na URL. A aplicação então carrega as informações completas desse local de destino da API e as exibe na página.  Esta página é somente leitura e não permite ao usuário fazer alterações nas informações. Se o usuário desejar editar as informações, ele pode navegar para a rota de edição correspondente.
-![Trip Flow - projeto](./assets/images/localviewid.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/localviewid.jpg)
 
 #### Rota para Alteração de atração específica cadastrada pelo próprio usuário: `/local/edit/:id` - Página: SpotEditPage
   Caos o usuário aperte em editar em `/locais`, leva para editar as informações de um local de destino específico que foi cadastrado pelo usuário. O usuário pode alterar qualquer informação e, em seguida, salvar as alterações, que são enviadas para armazenar no db.JSON.
-![Trip Flow - projeto](./assets/images/editarlocal.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/editarlocal.jpg)
 
 ## Rotas privadas
 Neste projeto, algumas rotas são privadas, somente podendo ser acessadas por usuários autenticados. Isso é feito usando um componente PrivateRoute que verifica se o usuário está autenticado antes de renderizar o componente da rota.
