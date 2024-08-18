@@ -20,11 +20,22 @@
 .grid-signup {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100%;
+  grid-template-areas: "formsignup imgsignup";
+  grid-template-columns: 50% 50%;
+  height: 100vw;
   background-image: url("https://images.unsplash.com/photo-1471506480208-91b3a4cc78be?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
 }
 
+.imgsignin {
+  grid-area: imgsignin;
+}
+.divSignup {
+  grid-area:formsignup;
+}
+.imgSignup {
+  grid-area: imgsignup;
+}
 nav {
   align-items: center;
 }
@@ -57,6 +68,9 @@ nav {
   grid-area: header;
 }
 
+.Menu{
+  grid-area: menu;
+}
 .hero {
   grid-area: hero;
 }

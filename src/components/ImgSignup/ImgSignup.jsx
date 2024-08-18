@@ -3,7 +3,8 @@ import "./ImgSignup.css";
 function ImgSignup() {
   return (
     <div className="imgSignup">
-      <div className="h2Signup">
+  
+        <div className="h2Signup">
         <h2 className="h2imgSignup" left="20">
           Experiências únicas em destinos inesquecíveis...
         </h2>
@@ -12,7 +13,7 @@ function ImgSignup() {
         className="logotripflowformsignupp"
         src="/public/logotripflow.png"
         alt="Logo"
-      />
+      />   
     </div>
   );
 }

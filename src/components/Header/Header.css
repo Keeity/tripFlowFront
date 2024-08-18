@@ -10,11 +10,11 @@
   align-items: center;
   z-index: 1000;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 1.875rem;
   list-style-type: none;
-  padding-right: 176px;
-  row-gap: 180px;
-  height: 95px;
+  padding-right: 11rem;
+  row-gap: 11.25rem;
+  height: 5.9375rem;
 }
 
 .Header:hover {
@@ -25,47 +25,45 @@
 .Header--navLeft {
   display: flex;
   align-items: center;
-  margin-left: 80px;
+  margin-left: 5rem;
   color: #0f3a5d;
 }
 
 .Header--navLeft a {
-  margin-right: 10px;
-  padding-left: 80px;
-  padding-right: 70px;
+  margin-right: 0.625rem;
+  padding-left: 5rem;
+  padding-right: 4.375rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: rgba(231, 234, 235, 0.8);
   font-weight: bolder;
   text-transform: uppercase;
   transition: color 0.3s ease;
-  text-shadow: 2px 1px 1px rgb(58, 58, 60);
+  text-shadow: 0.125rem 0.0625rem 0.0625rem rgb(58, 58, 60);
 }
 
 .Header--navLeft:hover a {
   color: #0f3a5d;
   text-shadow: none
-  
 }
 
 .Header--navLeft a:hover {
   color: rgb(80, 78, 78);
   text-shadow: none
-
 }
 
 .Header--navLeft .logodash {
-  height: 70px;
-  width: 100px;
+  height: 4.375rem;
+  width: 6.25rem;
   background-image: url("logotripflowe.png");
   background-size: cover;
-  padding-left: 70px;
-  padding-bottom: 10px;
+  padding-left: 4.375rem;
+  padding-bottom: 0.625rem;
 }
 
 .Header--navLeft:hover .logodash {
   background-image: url("logotripflow.png");
-  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
 }
 
 .Header--navLeft:hover button {
@@ -76,16 +74,16 @@
   background: white;
   color: #000;
   border: none;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
-  margin: 4px 20px;
+  font-size: 0.625rem;
+  margin: 0.25rem 1.25rem;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   transition: background-color 0.3s ease;
-  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.1875rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .Header--navLeft button:hover {

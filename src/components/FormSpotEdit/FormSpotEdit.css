@@ -5,7 +5,7 @@
   padding: 1.25rem;
   flex-wrap: wrap;
   background-color: rgb(244, 246, 234, 0.8);
-  border-radius: 10px;
+  border-radius: 1rem;
   width: 60vw;
   margin: 3.1rem auto;
   gap: 1.25rem;
@@ -22,16 +22,20 @@
   color: #050f68;
   text-decoration: underline;
 }
+
 .imgh1spotedit {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: center;
-  padding: 10px 36px 0px 36px;
+  padding: 0.625rem 2.25rem 0 2.25rem;
   row-gap: 1.25rem;
 }
-.h1spotedit{margin-left: 130px}
+
+.h1spotedit {
+  margin-left: 8.125rem;
+}
 
 .formspotedit {
   display: flex;
@@ -39,7 +43,7 @@
   align-content: space-between;
   align-items: baseline;
   justify-content: space-evenly;
-  padding: 20px 10px 20px 30px;
+  padding: 1.25rem 0.625rem 1.25rem 1.875rem;
   width: 50vw;
   color: #11153a;
 }
@@ -50,11 +54,12 @@
   padding-left: 1.25rem;
   font-weight: bold;
 }
+
 .textspotedit {
   min-width: 51.25rem;
   min-height: 2.5rem;
   border-style: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   padding: 0.625rem 1.25rem 0.3125rem 0.625rem;
   font-size: 0.8125rem;
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -83,7 +88,7 @@
   align-items: center;
   grid-template-columns: 1fr 1fr;
   align-items: end;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .inputsdivspoteditll {
@@ -91,8 +96,9 @@
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: end;
-  gap: 120px;
+  gap: 7.5rem;
 }
+
 .inputsdivspoteditlatlon {
   display: grid;
   align-items: center;
@@ -105,7 +111,7 @@
 label {
   display: flex;
   flex-direction: column;
-  padding: 0 10px 10px 0;
+  padding: 0 0.625rem 0.625rem 0;
 }
 
 .labeloption {
@@ -123,19 +129,20 @@ select {
 }
 
 .inputspotedit2 {
-  width: 37.1875rem;
+  width: 23.21875rem;
 }
+
 .inputspotedit3 {
-  width: 23.4375rem;
+  width: 14.6875rem;
 }
 
 .inputspotedit {
-  min-width: 23.125rem;
+  min-width: 14.4375rem;
 }
 
 .spotedit {
   padding: 0.625rem 1.25rem;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   border: none;
   background-color: #5cb85c;
   color: white;
@@ -145,18 +152,19 @@ select {
 .h1spotedit {
   font-size: 2.5em;
   color: #114a4f;
-  padding-left: 10.62rem;
+  padding-left: 6.625rem;
 }
+
 .btnspotedit {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
   min-height: 2.5rem;
-  margin-top: 2.1875rem;
-  margin-right: 4.375rem;
-  min-width: 18.75rem;
+  margin-top: 1.3675rem;
+  margin-right: 2.734375rem;
+  min-width: 11.71875rem;
   background-color: #184e77;
   color: rgb(244, 246, 234);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.3);
   transition: background-color 0.4s, transform 0.4s;
   cursor: pointer;
   width: fit-content;
@@ -164,5 +172,42 @@ select {
 
 .btnspotedit:hover {
   background-color: rgba(9, 93, 51, 0.8);
-  transform: translateY(-1px);
+  transform: translateY(-0.0625rem);
+}
+
+.blocform {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  max-width: 90%
+}
+
+.blocform2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.25rem;
+  width: 90%
+}
+
+.blocform3 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1.25rem;
+  width: 90%
+}
+
+@media screen and (max-width: 48rem) {
+
+  .blocform, .blocform3, .blocform2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    width: 90%
+  }
+   input {
+    max-width: 20rem;
+  }
+  button{
+    max-width: 21rem;
+  }
 }
