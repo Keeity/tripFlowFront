@@ -189,7 +189,7 @@
       "rate": "9",
       "accessibility": true,
       "selectiveWasteCollection": true,
-      "user_id": 2
+      "user_id": "2"
     },
     {
       "id": "4",
@@ -209,7 +209,7 @@
       "rate": "10",
       "accessibility": false,
       "selectiveWasteCollection": true,
-      "user_id": 4
+      "user_id": "4"
     },
     {
       "id": "5",
@@ -229,7 +229,7 @@
       "rate": "7",
       "accessibility": true,
       "selectiveWasteCollection": false,
-      "user_id": 2
+      "user_id": "2"
     },
     {
       "id": "6",
@@ -249,7 +249,7 @@
       "rate": "9",
       "accessibility": true,
       "selectiveWasteCollection": true,
-      "user_id": 6
+      "user_id": "1"
     },
     {
       "id": "7",
@@ -269,7 +269,7 @@
       "rate": "8",
       "accessibility": true,
       "selectiveWasteCollection": true,
-      "user_id": 1
+      "user_id": "1"
     },
     {
       "id": "8",
@@ -289,7 +289,7 @@
       "rate": "9",
       "accessibility": true,
       "selectiveWasteCollection": true,
-      "user_id": 8
+      "user_id": "8"
     },
     {
       "id": "9",
@@ -309,7 +309,7 @@
       "rate": "8",
       "accessibility": true,
       "selectiveWasteCollection": true,
-      "user_id": 2
+      "user_id": "2"
     },
        {
       "id": "10",
@@ -329,7 +329,7 @@
       "rate": "9",
       "accessibility": true,
       "selectiveWasteCollection": true,
-      "user_id": 1
+      "user_id": "2"
     },
     {
       "id": "11",
@@ -349,7 +349,7 @@
       "rate": "10",
       "accessibility": true,
       "selectiveWasteCollection": true,
-      "user_id": 9
+      "user_id": "9"
     }
   ]
 }

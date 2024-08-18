@@ -45,3 +45,12 @@
 
   margin-left: 10px;
 }
+
+
+@media screen and (max-width: 768px) {
+ .map {
+  position: relative;
+  width: 19rem;
+  height: 13rem;
+  }
+}

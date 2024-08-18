@@ -143,7 +143,8 @@ function FormSpotEdit() {
       </div>
 
       <form className="formspotedit" onSubmit={handleSubmit(editSpot)}>
-        <div className="inputsdivspotedit">
+      <div className="blocform">
+         {/* <div className="inputsdivspotedit"> */}
           <label>
             Nome *
             <input
@@ -168,8 +169,9 @@ function FormSpotEdit() {
             {errors.visitDate && <p>{errors.visitDate.message}</p>}
           </label>
         </div>
-
-        <div className="inputsdivspotedit">
+{/* 
+        <div className="inputsdivspotedit"> */}
+              <div className="blocform">
           <label>
             Descrição *
             <textarea
@@ -182,7 +184,8 @@ function FormSpotEdit() {
             {errors.description && <p>{errors.description.message}</p>}
           </label>
         </div>
-        <div className="inputsdivspoteditlatlon">
+        <div className="blocform2">
+        {/* <div className="inputsdivspoteditlatlon"> */}
           <label className="avaliacao">
             Avaliação *
             <select
@@ -316,7 +319,8 @@ function FormSpotEdit() {
             />
           </label>
         </div>
-        <div className="inputsdivspoteditlatlon">
+        <div className="blocform3">
+        {/* <div className="inputsdivspoteditlatlon"> */}
           <label className="cepspotsedit">
             CEP
             <input
@@ -346,7 +350,8 @@ function FormSpotEdit() {
           </label>
         </div>
 
-        <div className="inputsdivspoteditlatlon">
+        {/* <div className="inputsdivspoteditlatlon"> */}
+        <div className="blocform2">
           <div className="addressnumber">
             <label>
               Número

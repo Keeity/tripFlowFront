@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding: 20px;
+  padding: 1.25rem;
   flex-wrap: wrap;
-  background-color: rgb(244, 246, 234, 0.9);
-  border-radius: 10px;
+  background-color: rgba(244, 246, 234, 0.8);
+  border-radius: 0.625rem;
   width: 60vw;
-  margin: 50px auto;
-  gap: 20px;
-  padding-top: 15px;
+  margin: 3.125rem auto;
+  gap: 1.25rem;
+  padding-top: 0.9375rem;
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .pspotregistration {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   color: #5a5a5c;
 }
 
@@ -22,20 +22,22 @@
   color: #050f68;
   text-decoration: underline;
 }
+
 .imgh1spotregistration {
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: center;
-  padding-left: 36px;
-  padding-right: 36px;
-  row-gap: 20px;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  row-gap: 1.25rem;
 }
+
 .logotripflowformsignup {
-  top: 40px;
-  right: 40px;
-  height: 95px;
+  top: 2.5rem;
+  right: 2.5rem;
+  height: 5.9375rem;
 }
 
 .imgh1spotregistration {
@@ -47,53 +49,49 @@
 }
 
 .h1spotregistration {
-  margin-left: 95px;
-  padding-top: 10px;
+  margin-left: 5.9375rem;
+  padding-top: 0.625rem;
 }
 
 .formspotregistration {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-content: space-between;
   align-items: baseline;
   justify-content: space-evenly;
-  padding: 20px 10px 20px 30px;
-  width: 50vw;
+  padding: 1.25rem 0.625rem 1.25rem 1.875rem;
+  min-width: 50vw;
   color: #11153a;
 }
 
 .geolocalizacao {
-  width: 200px;
-  font-size: 14px;
+  width: 12.5rem;
+  font-size: 0.875rem;
   font-weight: bold;
 }
+
 .textspotregistration {
-  min-width: 820px;
+  width: 47.8125rem;
   border-style: none;
-  min-height: 40px;
-  padding-right: 20px;
-  padding: 10px 20px 5px 10px;
+  height: 3.125rem;
+  padding-right: 1.25rem;
+  padding: 0.625rem 1.25rem 0.3125rem 0.625rem;
   font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  border-radius: 5px;
+  font-size: 0.8125rem;
+  border-radius: 0.3125rem;
 }
 
 .referencepoint {
-  width: 148px;
+  width: 9.25rem;
 }
 
 .cepspotregistration {
-  width: 30px;
-}
-
-.formspotregistration input {
-  min-height: 20px;
-  min-width: 180px;
+  width: 1.875rem;
 }
 
 .formspotregistration select {
-  min-height: 20px;
-  min-width: 185px;
+  height: 2.5rem;
+  width: 10.625rem;
 }
 
 .inputsdivspotregistration {
@@ -101,7 +99,8 @@
   align-items: center;
   grid-template-columns: 1fr 1fr;
   align-items: end;
-  gap: 30px;
+  gap: 1.25rem;
+  width: 90%
 }
 
 .inputsdivspotregistrationll {
@@ -109,58 +108,60 @@
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: end;
-  gap: 120px;
+  gap: 2.5rem;
 }
+
 .inputsdivspotregistrationlatlon {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: end;
-  gap: 20px;
-  margin-top: 10px;
+  gap: 0.3125rem;
+  margin-top: 0.625rem;
 }
 
 label {
   display: flex;
   flex-direction: column;
-  padding: 0 10px 10px 0;
+  padding: 0 0.625rem 0.625rem 0;
 }
 
 .labeloption {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-width: 200px;
+  gap: 0.625rem;
+  width: 12.5rem;
 }
 
 .labeloption2 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-width: 200px;
+  gap: 0.625rem;
+  width: 12.5rem;
 }
 
 .inputspotregistration,
 .inputspotregistration2,
 .textspotregistration,
 select {
-  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
 
 .inputspotregistration2 {
-  width: 595px;
+  width: 25rem;
 }
+
 .inputspotregistration3 {
-  width: 375px;
+  width: 23.4375rem;
 }
 
 .inputspotregistration {
-  min-width: 370px;
+  width: 15.625rem;
 }
 
 .spotregistration {
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
   border: none;
   background-color: #5cb85c;
   color: white;
@@ -170,24 +171,102 @@ select {
 .h1spotregistration {
   font-size: 2.5em;
   color: #114a4f;
-  padding-left: 170px;
+  padding-left: 10.625rem;
 }
 
 .btnspotregistration {
-  padding-left: 36px;
-  padding-right: 36px;
-  min-height: 40px;
-  margin-top: 35px;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  height: 2.5rem;
+  margin-top: 2.1875rem;
   background-color: #184e77; 
-  margin-right: 70px;
-  min-width: 300px;
+  margin-right: 4.375rem;
+  width: 18.75rem;
   color: rgb(244, 246, 234);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.3); 
   transition: background-color 0.4s, transform 0.4s;
   cursor: pointer; 
   width: fit-content;
-}
+} 
 
 .btnspotregistration:hover {
   background-color: rgba(9, 93, 51, 0.8);
-  transform: translateY(-1px); }
+  transform: translateY(-0.0625rem); 
+}
+
+.blocform {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  max-width: 90%
+}
+
+.blocform2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.25rem;
+  width: 90%
+}
+
+.blocform3 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1.25rem;
+  width: 90%
+}
+
+@media screen and (max-width: 48rem) {
+
+  .blocform, .blocform3, .blocform2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    width: 90%
+  }
+   input {
+    max-width: 20rem;
+  }
+  button{
+    max-width: 21rem;
+  }
+
+  .formspotregistration {  
+    color:beige;
+    padding:0px;    
+    left:0px;   
+    max-width: 48rem;
+    gap: 0.3125rem;
+    margin:0px;
+    margin-left: 0.9375rem;
+
+  }
+
+.divspotregistration {
+  padding: 0px;
+  background-color:rgba(17, 21, 58, 0.3);
+  width: 100vw;
+  border-radius: 0px;
+  margin: 0px;
+  }
+  .imgh1spotregistration {
+    padding-left: 0.3125rem;
+    padding-right: 0px;
+    row-gap: 1.25rem;
+    color:white;
+    align-content: flex-start;
+  }
+  .h1spotregistration {
+    padding: 0px;
+    color:white;
+    font-size: 1.625rem;
+
+  }
+  .logotripflowformsignup {
+    size:0.00625rem
+  }
+  
+  .h1spotregistration {
+    margin-left: 0.3125rem;
+    padding-top: 0.3125rem;
+  }
+}

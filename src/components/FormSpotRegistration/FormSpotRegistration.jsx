@@ -6,7 +6,14 @@ import "./FormSpotRegistration.css";
 import { api } from "../../services/api";
 
 function FormSpotRegistration() {
-  const { register, handleSubmit, setValue, watch, formState: { errors }, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    watch,
+    formState: { errors },
+    reset,
+  } = useForm();
   const navigate = useNavigate();
   const spots = useSpots();
   const user = JSON.parse(localStorage.getItem("@tripflow:user"));
@@ -23,7 +30,7 @@ function FormSpotRegistration() {
 
   async function addSpot(data) {
     try {
-      const existingSpot = spots.find(spot => spot.name === data.name);
+      const existingSpot = spots.find((spot) => spot.name === data.name);
       if (existingSpot) {
         alert("Local já cadastrado com o mesmo nome");
         return;
@@ -43,7 +50,7 @@ function FormSpotRegistration() {
       });
 
       if (!response.ok) {
-        console.error("Erro na resposta da API:", await response.text()); 
+        console.error("Erro na resposta da API:", await response.text());
         alert("Erro ao cadastrar local");
         return;
       }
@@ -64,7 +71,9 @@ function FormSpotRegistration() {
       const fullAddress = `${data.logradouro}, ${data.bairro}, ${data.localidade}/${data.uf}`;
 
       const geoResponse = await fetch(
-        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(fullAddress)}`
+        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+          fullAddress
+        )}`
       );
       const geoData = await geoResponse.json();
 
@@ -81,25 +90,33 @@ function FormSpotRegistration() {
   }
   async function getAddressFromRP(reference) {
     try {
-          const geoSpot = await fetch(
-            `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(reference)}`
+      const geoSpot = await fetch(
+        `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+          reference
+        )}`
       );
       const geoData = await geoSpot.json();
 
       if (geoData && geoData.length > 0) {
         const location = geoData[0];
-       
+
         setValue("latitude", location.lat);
-      setValue("longitude", location.lon);
-      setValue("address", location.display_name);
-      setValue("cep", location.address.postcode || '');
-    } else {
-      console.error("Nenhum dado encontrado para o ponto de referência:", reference);
+        setValue("longitude", location.lon);
+        setValue("address", location.display_name);
+        setValue("cep", location.address.postcode || "");
+      } else {
+        console.error(
+          "Nenhum dado encontrado para o ponto de referência:",
+          reference
+        );
+      }
+    } catch (error) {
+      console.error(
+        "Erro ao buscar endereço a partir do ponto de referência:",
+        error
+      );
     }
-  } catch (error) {
-    console.error("Erro ao buscar endereço a partir do ponto de referência:", error);
   }
- }
   return (
     <div className="divspotregistration">
       <div className="imgh1spotregistration">
@@ -107,7 +124,8 @@ function FormSpotRegistration() {
       </div>
 
       <form className="formspotregistration" onSubmit={handleSubmit(addSpot)}>
-        <div className="inputsdivspotregistration">
+        {/* <div className="inputsdivspotregistration"> */}
+        <div className="blocform">
           <label>
             Nome *
             <input
@@ -116,7 +134,8 @@ function FormSpotRegistration() {
               {...register("name", { required: "Nome é obrigatório" })}
               onBlur={async (e) => {
                 console.log("onBlur triggered", e.target.value);
-                await getAddressFromRP(e.target.value);}}           
+                await getAddressFromRP(e.target.value);
+              }}
             />
             {errors.name && <p>{errors.name.message}</p>}
           </label>
@@ -124,31 +143,41 @@ function FormSpotRegistration() {
             Data da Visita *
             <input
               type="date"
-              {...register("visitDate", { required: "Data da visita é obrigatória" })}
+              {...register("visitDate", {
+                required: "Data da visita é obrigatória",
+              })}
             />
             {errors.visitDate && <p>{errors.visitDate.message}</p>}
           </label>
-        </div>
+          </div>
+        {/* </div> */}
 
-        <div className="inputsdivspotregistration">
-          <label>
+        {/* <div className="inputsdivs potregistration"> */}
+        <div className="blocform">
+             <label>
             Descrição *
             <textarea
               className="textspotregistration"
               placeholder="Digite a descrição do local"
-              {...register("description", { required: "Descrição é obrigatória" })}
+              {...register("description", {
+                required: "Descrição é obrigatória",
+              })}
             />
             {errors.description && <p>{errors.description.message}</p>}
           </label>
-      
         </div>
-        <div className="inputsdivspotregistrationlatlon">
-        <label className="avaliacao">
+        {/* <div className="inputsdivspotregistrationlatlon"> */}
+        <div className="blocform2">
+          <label className="avaliacao">
             Avaliação *
-            <select {...register("rate", { required: "Avaliação é obrigatória" })}>
+            <select
+              {...register("rate", { required: "Avaliação é obrigatória" })}
+            >
               <option value="">Selecione</option>
               {[...Array(10)].map((_, i) => (
-                <option key={i + 1} value={i + 1}>{i + 1}</option>
+                <option key={i + 1} value={i + 1}>
+                  {i + 1}
+                </option>
               ))}
             </select>
             {errors.rate && <p>{errors.rate.message}</p>}
@@ -157,19 +186,29 @@ function FormSpotRegistration() {
           <div className="labeloption">
             <label>
               Categoria *
-              <select {...register("attractionCategory", { required: "Categoria da atração é obrigatória" })}>
+              <select
+                {...register("attractionCategory", {
+                  required: "Categoria da atração é obrigatória",
+                })}
+              >
                 <option value="">Selecione</option>
                 <option value="natural">Natural</option>
                 <option value="urbana">Urbana</option>
               </select>
-              {errors.attractionCategory && <p>{errors.attractionCategory.message}</p>}
+              {errors.attractionCategory && (
+                <p>{errors.attractionCategory.message}</p>
+              )}
             </label>
           </div>
 
           <div className="labeloption">
             <label>
               Visibilidade *
-              <select {...register("visibility", { required: "Visibilidade é obrigatória" })}>
+              <select
+                {...register("visibility", {
+                  required: "Visibilidade é obrigatória",
+                })}
+              >
                 <option value="">Selecione</option>
                 <option value="private">Privado</option>
                 <option value="public">Público</option>
@@ -190,19 +229,18 @@ function FormSpotRegistration() {
               {errors.cost && <p>{errors.cost.message}</p>}
             </label>
           </div>
-         
-        </div>
-        <div className="inputsdivspotregistrationlatlon">
-            <label>
-              Nível de Aventura
-              <select {...register("adventureLevel")}>
-                <option value="">Selecione</option>
-                <option value="radical">Radical</option>
-                <option value="moderado">Moderado</option>
-                <option value="tranquilo">Tranquilo</option>
-              </select>
-              {errors.adventureLevel && <p>{errors.adventureLevel.message}</p>}
-            </label>
+        {/* </div> */}
+        {/* <div className="inputsdivspotregistrationlatlon"> */}
+          <label>
+            Nível de Aventura
+            <select {...register("adventureLevel")}>
+              <option value="">Selecione</option>
+              <option value="radical">Radical</option>
+              <option value="moderado">Moderado</option>
+              <option value="tranquilo">Tranquilo</option>
+            </select>
+            {errors.adventureLevel && <p>{errors.adventureLevel.message}</p>}
+          </label>
 
           <div className="labeloption">
             <label>
@@ -223,7 +261,9 @@ function FormSpotRegistration() {
                 <option value="true">Sim</option>
                 <option value="false">Não</option>
               </select>
-              {errors.selectiveWasteCollection && <p>{errors.selectiveWasteCollection.message}</p>}
+              {errors.selectiveWasteCollection && (
+                <p>{errors.selectiveWasteCollection.message}</p>
+              )}
             </label>
           </div>
           <label>
@@ -235,9 +275,10 @@ function FormSpotRegistration() {
               disabled
             />
           </label>
-
+        {/* </div> */}
         </div>
-        <div className="inputsdivspotregistrationlatlon">
+        {/* <div className="inputsdivspotregistrationlatlon"> */}
+        <div className="blocform3">
           <label className="cepspotsregistration">
             CEP
             <input
@@ -265,11 +306,10 @@ function FormSpotRegistration() {
             />
             {errors.address && <p>{errors.address.message}</p>}
           </label>
-     
         </div>
-
-        <div className="inputsdivspotregistrationlatlon">
-        <div className="addressnumber">
+        <div className="blocform2">
+        {/* <div className="inputsdivspotregistrationlatlon"> */}
+          <div className="addressnumber">
             <label>
               Número
               <input
@@ -279,23 +319,27 @@ function FormSpotRegistration() {
             </label>
           </div>
 
-          <div className="latlong">
+          <div className="inputspotregistration">
             <label>
               Longitude *
               <input
                 placeholder="Longitude"
-                {...register("longitude", { required: "Longitude é obrigatória" })}
+                {...register("longitude", {
+                  required: "Longitude é obrigatória",
+                })}
               />
               {errors.longitude && <p>{errors.longitude.message}</p>}
             </label>
           </div>
-          <div className="latlong">
+          <div className="inputspotregistration">
             <label>
               Latitude *
               <input
-                className="latlong"
+                className="inputspotregistration"
                 placeholder="Latitude"
-                {...register("latitude", { required: "Latitude é obrigatória" })}
+                {...register("latitude", {
+                  required: "Latitude é obrigatória",
+                })}
               />
               {errors.latitude && <p>{errors.latitude.message}</p>}
             </label>
@@ -304,14 +348,19 @@ function FormSpotRegistration() {
             <label className="pspotregistration">
               {geolocality && (
                 <p>
-                  <a href={geolocality} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={geolocality}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Ver no Google Maps
                   </a>
                 </p>
               )}
             </label>
           </div>
-        </div>
+          </div>
+
 
         <button className="btnspotregistration" type="submit">
           Cadastrar

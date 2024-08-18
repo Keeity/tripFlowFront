@@ -58,33 +58,33 @@ O projeto foi estruturado para que os usuários, a depender do seu tipo de permi
 
    #### Rota para Login: `/login` - Página: SigninPage
    Inicia com uma página para login e, caso não tenha cadastro, direciona para a página de cadastro.
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/login.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/login.jpg)
 
    #### Rota para Cadastro de usuário: `/cadastro` - Página: SignupPage
 A aplicação inclui uma página para cadastrar novos usuários, se já cadastrado, direciona ao login. Os usuários podem se cadastrar fornecendo as informações necessárias e, em seguida, fazer login para acessar a aplicação.
 
 Todos os inputs de formulário de cadastro foram usados de maneira correta, com validação para garantir que todos os campos obrigatórios fossem preenchidos, além de validações adicionais com HookForm.
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/cadastroUser.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/cadastroUser.jpg)
 
    #### Rota para Dashboard: `/dashboard` - Página: DashboardPage
    página de Dashboard foi criada com cards para exibir as informações corretas. Ela fornece uma visão geral dos locais de viagem cadastrados, além de informar a quantidade de Usuário e Locais cadastrados, bem como mapa para visualização de todos os locais. 
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/dashboard.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/dashboard.jpg)
 
    #### Rota para Listagem de locais: `/locais` - Página: SpotsPage
    Lista os "Meus Locais", ou seja, todos os locais cadastrados pelo usuário, havendo opção de editar, excluir ou visualizar detalhes do local cadastrado pelo usuário.
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/meuslocais.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/meuslocais.jpg)
 
 #### Rota para Cadastro de nova Atração Turística Privada: `/local - Página`: SpotRegistrationPage
  A aplicação inclui uma página para cadastrar e/ou editar locais de destino da viagem. Os usuários podem fornecer as informações necessárias para criar um novo local de destino ou editar um existente, desde que cadastrado por si.
- ![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/localregistration.jpg)
+ ![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/localregistration.jpg)
 
 #### Rota para Visualização de atração específica cadastrada pelo próprio usuário: /local/:id - Página: SpotViewPage
 É usada para visualizar os detalhes de um local de destino específico, a partir da seleção no dashboard ou mesmo nos locais (Meus locais). Semelhante à rota de edição, o ID do local de destino é passado como um parâmetro na URL. A aplicação então carrega as informações completas desse local de destino da API e as exibe na página.  Esta página é somente leitura e não permite ao usuário fazer alterações nas informações. Se o usuário desejar editar as informações, ele pode navegar para a rota de edição correspondente.
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/localviewid.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/localviewid.jpg)
 
 #### Rota para Alteração de atração específica cadastrada pelo próprio usuário: `/local/edit/:id` - Página: SpotEditPage
   Caos o usuário aperte em editar em `/locais`, leva para editar as informações de um local de destino específico que foi cadastrado pelo usuário. O usuário pode alterar qualquer informação e, em seguida, salvar as alterações, que são enviadas para armazenar no db.JSON.
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/editarlocal.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/editarlocal.jpg)
 
 ## Rotas privadas
 Neste projeto, algumas rotas são privadas, somente podendo ser acessadas por usuários autenticados. Isso é feito usando um componente PrivateRoute que verifica se o usuário está autenticado antes de renderizar o componente da rota.
@@ -96,7 +96,7 @@ No componente RoutesComponent, as rotas para as páginas DashboardPage, SpotsPag
  ## Implementações Extras
 
 ### Responsividade para Diferentes Tipos de Tela: 
-A pagina de login recebeu a implementação de responsividade para diferentes tamanhos de tela. Isso garante que a aplicação seja facilmente utilizável em uma variedade de dispositivos, incluindo desktops, tablets e smartphones.
+As páginas de login, cadastro de usuário, cadastro de locais, dashboard, etc, receberam a implementação de responsividade para diferentes tamanhos de tela. Isso garante que a aplicação seja facilmente utilizável em uma variedade de dispositivos, incluindo desktops, tablets e smartphones.
 
 ### Uso de Mapas:
  Foi implementado o uso de mapas, e o mesmo está funcionando adequadamente. O mapa foi implementado tanto na página de Dashboard como nas páginas de visualização dos detalhes de cada local.
@@ -111,28 +111,28 @@ A pagina de login recebeu a implementação de responsividade para diferentes ta
    1. Copiar: `git clone https://github.com/Keeity/tripFlowFront` 
 
 ## Rodar o repositório:
+Para executar o sistema React, você precisa ter o Node.js instalado em seu computador: `http://localhost:5173/local`
 
    ### Para começar a utilizar, é necessário instalar as dependencias (node_modules):
    1. `npm install`
    2. Se for em ambiente local: `npm install --dev`
 
    ### Para rodar o repositório em ambiente local
-   1. No terminal 1, para executar o script vite: `npm run dev`
+   1. No terminal 1, para executar o script vite em modo de desenvolvimento: `npm run dev`
    2. No terminal 2, para simular chamada à API utilizando JSONServer: `npm run server`
 
-## Para testar a API TripFlow
+
+## Para acessar as funcionalidades da TripFlow
 
   ### Para conseguir acessar como administrador(`admin`), utilizar para login uma das opções abaixo:
-
-#### Usuário admin Nicholas
-   * email: `nicholas@email.com`
-   *  password: `nicholas123`
 
 #### Usuário admin Keeity
    * email: `keeity@email.com`
    *  password: `keeity123`
 
-
+#### Usuário admin Nicholas
+   * email: `nicholas@email.com`
+   *  password: `nicholas123`
 
 ## Futuras Melhorias
 
@@ -140,7 +140,7 @@ Em breve, a ideia a ser implementada é integrar com o projeto de backend já cr
  
 De toda a forma, este é o MVP de uma plataforma que não apenas permite criação e busca de locais turísticos, mas que possibilita ao usuário já ter um roteiro de viagem completo, incluindo locais turísticos, hoteis, restaurantes, o mais personalizado possível.
 
-![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/feature/ajustesereadme/src/assets/images/ideia_final.jpg)
+![Trip Flow - projeto](https://github.com/Keeity/tripFlowFront/blob/main/src/assets/images/ideia_final.jpg)
 
 ## Links da API
 
@@ -148,6 +148,6 @@ De toda a forma, este é o MVP de uma plataforma que não apenas permite criaç�
    `https://github.com/Keeity/tripFlowFront`
 
    ### Vídeo apresentando a API
-   ``
+   `https://drive.google.com/drive/folders/1B0YLrdVQAEixMW1NGNHfFGGdB-sLxEUM?usp=drive_link`
 
  

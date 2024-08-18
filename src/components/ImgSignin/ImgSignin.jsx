@@ -3,10 +3,14 @@ import "./ImgSignin.css";
 function ImgSignin() {
   return (
     <div className="imgSignin">
+ 
       <div className="h2signin">
-        <h2 className="h2imgsignin">
-          Experiências que transformam,<br></br> Lugares que inspiram...
-        </h2>
+      <img
+        className="logotripflowe"
+        src="/public/logotripflowe.png"
+        alt="Logo"
+      />  
+    
         <h2 className="h2imgsignin">
           Experiências que transformam,<br></br> Lugares que inspiram...
         </h2>
